@@ -1,0 +1,436 @@
+{
+  "extName": {
+    "message": "GCal クイックインポート"
+  },
+  "extDescription": {
+    "message": "Google カレンダーのツールバーにインポートボタンを追加し、上下分割ドラッグ＆ドロップで .ics/.csv を素早く取り込みます。"
+  },
+  "popupSubtitle": {
+    "message": "ツールバー直行 + 分割ドラッグ＆ドロップ"
+  },
+  "labelDefaultCalendar": {
+    "message": "クイックインポート先のカレンダー"
+  },
+  "placeholderDefaultCalendar": {
+    "message": "カレンダー名を入力"
+  },
+  "hintDefaultCalendar": {
+    "message": "下半分ドロップや Web 上の .ics リンク右クリック取り込みに使用します。"
+  },
+  "guideTopPill": {
+    "message": "上半分"
+  },
+  "guideTopDesc": {
+    "message": ".ics/.csv をドロップして予定をプレビューし保存先カレンダーを選択"
+  },
+  "guideBottomPill": {
+    "message": "下半分"
+  },
+  "guideBottomDesc": {
+    "message": "ドロップで自動バックグラウンド取込＆予定の日付へ自動移動"
+  },
+  "statusSaved": {
+    "message": "保存しました"
+  },
+  "toolbarImportLabel": {
+    "message": "インポート"
+  },
+  "overlayDirectBadge": {
+    "message": "インポート画面"
+  },
+  "overlayDirectTitle": {
+    "message": "ドロップしてファイルを自動入力"
+  },
+  "overlayDirectSubtitle": {
+    "message": "このページの .ics / .csv ファイル選択欄に自動でセットします"
+  },
+  "overlayPickBadge": {
+    "message": "上半分 · カレンダーを選択"
+  },
+  "overlayPickTitle": {
+    "message": "インポート画面を開いてカレンダー選択"
+  },
+  "overlayPickSubtitle": {
+    "message": "ファイルを入力した状態でインポート画面を開きます"
+  },
+  "overlayQuickBadge": {
+    "message": "下半分 · クイックインポート"
+  },
+  "overlayQuickTitle": {
+    "message": "デフォルトカレンダーへ自動インポート"
+  },
+  "overlayQuickSubtitlePrefix": {
+    "message": "保存先："
+  },
+  "overlayQuickSubtitleSuffix": {
+    "message": " · 画面を離れずバックグラウンドで実行（複数ファイル対応）"
+  },
+  "defaultCalendarFallback": {
+    "message": "Google デフォルトカレンダー"
+  },
+  "toastCloseLabel": {
+    "message": "閉じる"
+  },
+  "toastUnsupportedFile": {
+    "message": ".ics または .csv 形式のカレンダーファイルのみ対応しています。"
+  },
+  "toastFileTooLarge": {
+    "message": "「$FILE$」は 6 MB を超えています。インポート画面から手動でアップロードしてください。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastExtensionReloaded": {
+    "message": "拡張機能が再読み込みされました。Google カレンダーを更新してからドロップしてください。"
+  },
+  "btnRefreshNow": {
+    "message": "今すぐ更新"
+  },
+  "toastDirectFilled": {
+    "message": "「$FILE$」を入力しました。カレンダーを選んでインポートを押してください。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastDirectNotRecognized": {
+    "message": "「$FILE$」の入力を試みましたが反映されませんでした。コンソールを確認するか手動で選択してください。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastInputNotFoundRefresh": {
+    "message": "ファイル選択欄が見つかりませんでした。ページを更新して再試行してください。"
+  },
+  "toastPickSingleNotice": {
+    "message": "カレンダー選択モードは1ファイルずつ処理します。「$FILE$」を読み込みました。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastStageFailed": {
+    "message": "インポートの準備に失敗しました：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickProgressMulti": {
+    "message": "($INDEX$/$TOTAL$) 「$FILE$」をバックグラウンドでインポート中...",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "file": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickProgressSingle": {
+    "message": "「$FILE$」をバックグラウンドでインポート中...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickSuccessSingle": {
+    "message": "インポート完了$CAL$：$DETAIL$",
+    "placeholders": {
+      "cal": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickSuccessMulti": {
+    "message": "$DONE$/$TOTAL$ 件のファイルをインポートしました$CAL$",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "cal": {
+        "content": "$3"
+      }
+    }
+  },
+  "calParenFormat": {
+    "message": "（$NAME$）",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickJumping": {
+    "message": "$MSG$ · $DATE$ へ移動中...",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickJumped": {
+    "message": "$MSG$ · $DATE$ へ移動しました",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "btnJumpToDate": {
+    "message": "$DATE$ へ移動",
+    "placeholders": {
+      "date": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnReturnOriginDate": {
+    "message": "元の日に戻る"
+  },
+  "toastQuickPartialFail": {
+    "message": "成功 $OK$ 件、失敗 $FAIL$ 件：$DETAIL$",
+    "placeholders": {
+      "ok": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "detail": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickFailed": {
+    "message": "インポート未完了：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnViewImportTab": {
+    "message": "タブを表示"
+  },
+  "btnOpenImportPage": {
+    "message": "インポート画面"
+  },
+  "toastQuickTimeout": {
+    "message": "バックグラウンドインポートがタイムアウトしました。インポート画面を確認してください。"
+  },
+  "toastFillingFile": {
+    "message": "「$FILE$」を入力中...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errInputNotFound": {
+    "message": "ファイル選択欄が見つかりません（未ログインまたは画面変更の可能性があります）。"
+  },
+  "toastInputNotFoundManual": {
+    "message": "インポート画面のファイル選択欄が見つかりませんでした。手動で選択してください。"
+  },
+  "toastPickNotRecognized": {
+    "message": "選択欄は見つかりましたが「$FILE$」が認識されませんでした（詳細はコンソールを確認）。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastPickSuccess": {
+    "message": "「$FILE$」を入力しました。カレンダーを選んでインポートを押してください。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnBackToCalendar": {
+    "message": "カレンダーに戻る"
+  },
+  "errQuickNotRecognized": {
+    "message": "Google カレンダーが「$FILE$」を認識できませんでした。インポート画面を確認してください。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownNotFound": {
+    "message": "「カレンダーに追加」ドロップダウンが見つかりません。"
+  },
+  "errCalendarNotFound": {
+    "message": "カレンダー「$NAME$」が見つかりません。",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownExpandFailed": {
+    "message": "カレンダー一覧を開けませんでした。"
+  },
+  "errImportBtnDisabled": {
+    "message": "インポートボタンが有効になりませんでした。ファイルが認識されていない可能性があります。"
+  },
+  "errResultNotCaptured": {
+    "message": "インポートをクリックしましたが完了メッセージを取得できませんでした。画面を確認してください。"
+  },
+  "errAutoImportException": {
+    "message": "自動インポートエラー：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "errStartQuickImportFailed": {
+    "message": "バックグラウンドインポートを開始できませんでした。"
+  },
+  "commandOpenFilePicker": {
+    "message": "インポートする .ics / .csv ファイルを選択"
+  },
+  "contextMenuImportIcs": {
+    "message": "Google カレンダーに .ics をインポート"
+  },
+  "ctxFetchingLink": {
+    "message": "カレンダーファイルを取得中..."
+  },
+  "ctxFetchFailed": {
+    "message": ".ics リンクの取得に失敗しました：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "ctxImportingFile": {
+    "message": "「$FILE$」を Google カレンダーにインポート中...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideShortcutDesc": {
+    "message": "ショートカットで複数 .ics/.csv ファイルをまとめて選択＆取込"
+  },
+  "optionCustomCalendar": {
+    "message": "カレンダー名を手入力..."
+  },
+  "overlayPickTitleModal": {
+    "message": "予定をプレビューしてカレンダー選択"
+  },
+  "overlayPickSubtitleModal": {
+    "message": "ページを離れずに予定内容を確認し、保存先カレンダーを選択（複数ファイル対応）"
+  },
+  "previewAllDay": {
+    "message": "終日"
+  },
+  "modalMetaSingle": {
+    "message": "$FILE$ · $COUNT$ 件の予定",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalMetaMulti": {
+    "message": "$FILES$ ファイル · $COUNT$ 件の予定",
+    "placeholders": {
+      "files": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalPickTitle": {
+    "message": "Google カレンダーへインポート"
+  },
+  "modalSelectCalendarLabel": {
+    "message": "カレンダーに追加"
+  },
+  "modalOpenNativePage": {
+    "message": "標準画面で開く"
+  },
+  "modalBtnCancel": {
+    "message": "キャンセル"
+  },
+  "modalBtnImportMulti": {
+    "message": "インポート ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "modalMoreEvents": {
+    "message": "他 $COUNT$ 件の予定",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastSkippedInvalidFiles": {
+    "message": "未対応または容量超過のファイル $COUNT$ 件をスキップしました。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideHeading": {
+    "message": "インポート方法"
+  },
+  "guideToolbarPill": {
+    "message": "ツールバー"
+  },
+  "guideToolbarDesc": {
+    "message": "クリックでインポート画面 · Alt+クリックでファイル選択を直接開く"
+  },
+  "guideRightClickPill": {
+    "message": "右クリック"
+  },
+  "guideRightClickDesc": {
+    "message": "Web ページ上の .ics リンクを右クリックしてそのまま自動インポート"
+  },
+  "btnSyncCalendars": {
+    "message": "インポート画面から正確なカレンダー一覧を同期"
+  },
+  "statusSynced": {
+    "message": "同期完了"
+  }
+}

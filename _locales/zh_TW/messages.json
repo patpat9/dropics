@@ -1,0 +1,436 @@
+{
+  "extName": {
+    "message": "GCal 快速匯入"
+  },
+  "extDescription": {
+    "message": "在 Google Calendar 頂欄新增匯入捷徑，支援上下分割拖放匯入 .ics / .csv 行事曆檔案及右鍵連結匯入。"
+  },
+  "popupSubtitle": {
+    "message": "頂欄直達 + 分割拖放匯入 .ics"
+  },
+  "labelDefaultCalendar": {
+    "message": "快速匯入的目標行事曆"
+  },
+  "placeholderDefaultCalendar": {
+    "message": "輸入目標行事曆名稱"
+  },
+  "hintDefaultCalendar": {
+    "message": "用於下半區拖放及右鍵網頁 .ics 連結的自動匯入。"
+  },
+  "guideTopPill": {
+    "message": "上半區"
+  },
+  "guideTopDesc": {
+    "message": "拖入 .ics/.csv 預覽活動並於主頁彈窗選擇目標行事曆"
+  },
+  "guideBottomPill": {
+    "message": "下半區"
+  },
+  "guideBottomDesc": {
+    "message": "拖入後背景自動匯入目標行事曆，並跳轉至活動日期"
+  },
+  "statusSaved": {
+    "message": "已儲存"
+  },
+  "toolbarImportLabel": {
+    "message": "匯入"
+  },
+  "overlayDirectBadge": {
+    "message": "目前匯入頁"
+  },
+  "overlayDirectTitle": {
+    "message": "放開自動填入檔案"
+  },
+  "overlayDirectSubtitle": {
+    "message": "直接填入本頁的 .ics / .csv 檔案選取欄中"
+  },
+  "overlayPickBadge": {
+    "message": "上半區 · 選擇行事曆"
+  },
+  "overlayPickTitle": {
+    "message": "開啟匯入頁並選擇行事曆"
+  },
+  "overlayPickSubtitle": {
+    "message": "自動跳轉至匯入頁並填好檔案，方便選擇目標行事曆"
+  },
+  "overlayQuickBadge": {
+    "message": "下半區 · 極速匯入"
+  },
+  "overlayQuickTitle": {
+    "message": "自動匯入預設行事曆（不離開主頁）"
+  },
+  "overlayQuickSubtitlePrefix": {
+    "message": "目標行事曆："
+  },
+  "overlayQuickSubtitleSuffix": {
+    "message": " · 背景靜默匯入，支援同時拖入多個 .ics 檔案"
+  },
+  "defaultCalendarFallback": {
+    "message": "Google 預設主行事曆"
+  },
+  "toastCloseLabel": {
+    "message": "關閉"
+  },
+  "toastUnsupportedFile": {
+    "message": "僅支援拖入 .ics 或 .csv 行事曆檔案。"
+  },
+  "toastFileTooLarge": {
+    "message": "檔案 \"$FILE$\" 超過 6 MB，請改用原生匯入頁手動上傳。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastExtensionReloaded": {
+    "message": "擴充功能剛重新載入，請先重新整理 Google Calendar 頁面後再拖入。"
+  },
+  "btnRefreshNow": {
+    "message": "立即重新整理"
+  },
+  "toastDirectFilled": {
+    "message": "已填入 \"$FILE$\"，選擇行事曆後點選 Import 即可。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastDirectNotRecognized": {
+    "message": "已嘗試填入 \"$FILE$\"，但頁面未更新檔名，請查看 Console 日誌或手動選取。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastInputNotFoundRefresh": {
+    "message": "找不到本頁的檔案上傳元件，請重新整理頁面後再試。"
+  },
+  "toastPickSingleNotice": {
+    "message": "選擇行事曆模式每次處理 1 個檔案，已為你載入 \"$FILE$\"。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastStageFailed": {
+    "message": "準備匯入失敗：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickProgressMulti": {
+    "message": "($INDEX$/$TOTAL$) 正在背景匯入 \"$FILE$\"...",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "file": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickProgressSingle": {
+    "message": "正在背景匯入 \"$FILE$\"...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickSuccessSingle": {
+    "message": "匯入完成$CAL$：$DETAIL$",
+    "placeholders": {
+      "cal": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickSuccessMulti": {
+    "message": "已成功背景匯入 $DONE$/$TOTAL$ 個檔案$CAL$",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "cal": {
+        "content": "$3"
+      }
+    }
+  },
+  "calParenFormat": {
+    "message": "（$NAME$）",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickJumping": {
+    "message": "$MSG$ · 正在跳轉至 $DATE$...",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickJumped": {
+    "message": "$MSG$ · 已跳轉至 $DATE$",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "btnJumpToDate": {
+    "message": "跳轉至 $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnReturnOriginDate": {
+    "message": "回到原日期"
+  },
+  "toastQuickPartialFail": {
+    "message": "成功 $OK$ 個，失敗 $FAIL$ 個：$DETAIL$",
+    "placeholders": {
+      "ok": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "detail": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickFailed": {
+    "message": "匯入未完成：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnViewImportTab": {
+    "message": "查看匯入頁"
+  },
+  "btnOpenImportPage": {
+    "message": "開啟匯入頁"
+  },
+  "toastQuickTimeout": {
+    "message": "背景匯入逾時，請手動檢查匯入頁。"
+  },
+  "toastFillingFile": {
+    "message": "正在填入 \"$FILE$\"...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errInputNotFound": {
+    "message": "匯入頁找不到檔案上傳框（可能未登入或頁面改版）"
+  },
+  "toastInputNotFoundManual": {
+    "message": "找不到匯入頁的檔案選取框，請手動選擇檔案。"
+  },
+  "toastPickNotRecognized": {
+    "message": "已找到上傳框，但 Google Calendar 未辨識 \"$FILE$\"（已輸出除錯資訊至 Console）。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastPickSuccess": {
+    "message": "已自動填入 \"$FILE$\"，請選擇目標行事曆後點選 Import。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnBackToCalendar": {
+    "message": "返回行事曆"
+  },
+  "errQuickNotRecognized": {
+    "message": "頁面未辨識自動填入的 \"$FILE$\"，請手動檢查匯入頁",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownNotFound": {
+    "message": "找不到「新增至日曆」下拉選單"
+  },
+  "errCalendarNotFound": {
+    "message": "找不到名為 \"$NAME$\" 的行事曆",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownExpandFailed": {
+    "message": "無法展開行事曆下拉選單"
+  },
+  "errImportBtnDisabled": {
+    "message": "Import 按鈕未變為可點選狀態，檔案可能未被辨識"
+  },
+  "errResultNotCaptured": {
+    "message": "已點選 Import，但未擷取到 Google Calendar 的完成提示，請檢查匯入頁。"
+  },
+  "errAutoImportException": {
+    "message": "自動匯入發生例外：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "errStartQuickImportFailed": {
+    "message": "無法啟動背景匯入"
+  },
+  "commandOpenFilePicker": {
+    "message": "選擇要匯入的 .ics / .csv 檔案"
+  },
+  "contextMenuImportIcs": {
+    "message": "匯入此 .ics 至 Google Calendar"
+  },
+  "ctxFetchingLink": {
+    "message": "正在取得行事曆檔案..."
+  },
+  "ctxFetchFailed": {
+    "message": "取得 .ics 連結失敗：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "ctxImportingFile": {
+    "message": "正在將 \"$FILE$\" 匯入至 Google Calendar...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideShortcutDesc": {
+    "message": "快速鍵開啟檔案框，一次選擇 1 個或多個 .ics/.csv 批次匯入"
+  },
+  "optionCustomCalendar": {
+    "message": "手動輸入行事曆名稱..."
+  },
+  "overlayPickTitleModal": {
+    "message": "預覽活動並選擇行事曆（不離開主頁）"
+  },
+  "overlayPickSubtitleModal": {
+    "message": "放開後彈窗預覽標題與時間並選目標行事曆，支援同時拖入多個檔案"
+  },
+  "previewAllDay": {
+    "message": "全天"
+  },
+  "modalMetaSingle": {
+    "message": "$FILE$ · 共 $COUNT$ 筆活動",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalMetaMulti": {
+    "message": "$FILES$ 個檔案 · 共 $COUNT$ 筆活動",
+    "placeholders": {
+      "files": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalPickTitle": {
+    "message": "匯入至 Google Calendar"
+  },
+  "modalSelectCalendarLabel": {
+    "message": "新增至行事曆"
+  },
+  "modalOpenNativePage": {
+    "message": "改用原生匯入頁"
+  },
+  "modalBtnCancel": {
+    "message": "取消"
+  },
+  "modalBtnImportMulti": {
+    "message": "匯入 ($COUNT$ 個檔案)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "modalMoreEvents": {
+    "message": "還有 $COUNT$ 筆活動",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastSkippedInvalidFiles": {
+    "message": "已略過 $COUNT$ 個不支援或過大的檔案。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideHeading": {
+    "message": "使用方式"
+  },
+  "guideToolbarPill": {
+    "message": "頂欄圖示"
+  },
+  "guideToolbarDesc": {
+    "message": "點選開啟匯入匯出頁 · Alt+點選直接開啟多檔選擇框"
+  },
+  "guideRightClickPill": {
+    "message": "右鍵連結"
+  },
+  "guideRightClickDesc": {
+    "message": "在任意網頁右鍵 .ics 連結，背景直接擷取並匯入行事曆"
+  },
+  "btnSyncCalendars": {
+    "message": "從匯入頁精確同步可寫入行事曆列表"
+  },
+  "statusSynced": {
+    "message": "已同步"
+  }
+}

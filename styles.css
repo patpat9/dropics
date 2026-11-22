@@ -1,0 +1,717 @@
+/* Toolbar Quick Import Button */
+#gcal-quick-import-wrapper {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  align-self: center;
+  position: relative;
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+  margin-right: 4px;
+  line-height: 1;
+}
+
+#gcal-quick-import-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  color: #444746;
+  padding: 0;
+  margin: 0;
+  transition: background-color 0.15s ease, color 0.15s ease;
+  position: relative;
+}
+
+#gcal-quick-import-btn:hover {
+  background-color: rgba(60, 64, 67, 0.08);
+  color: #1f1f1f;
+}
+
+#gcal-quick-import-btn:active {
+  background-color: rgba(60, 64, 67, 0.14);
+}
+
+#gcal-quick-import-btn:focus-visible {
+  outline: 2px solid #1a73e8;
+  outline-offset: 1px;
+}
+
+#gcal-quick-import-btn svg {
+  width: 24px;
+  height: 24px;
+  display: block;
+  pointer-events: none;
+}
+
+/* Native-style Tooltip */
+#gcal-quick-import-tooltip {
+  position: absolute;
+  top: calc(100% + 6px);
+  left: 50%;
+  transform: translateX(-50%) translateY(-2px);
+  background: #3c4043;
+  color: #ffffff;
+  font-family: "Google Sans", Roboto, Arial, sans-serif;
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 16px;
+  padding: 5px 8px;
+  border-radius: 4px;
+  white-space: nowrap;
+  pointer-events: none;
+  opacity: 0;
+  transition: opacity 0.12s ease, transform 0.12s ease;
+  z-index: 9999;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+
+#gcal-quick-import-wrapper:hover #gcal-quick-import-tooltip,
+#gcal-quick-import-btn:focus-visible + #gcal-quick-import-tooltip {
+  opacity: 1;
+  transform: translateX(-50%) translateY(0);
+}
+
+@media (prefers-color-scheme: dark) {
+  #gcal-quick-import-btn {
+    color: #c4c7c5;
+  }
+  #gcal-quick-import-btn:hover {
+    background-color: rgba(232, 234, 237, 0.08);
+    color: #e3e3e3;
+  }
+}
+
+/* Telegram-style Split Drag & Drop Overlay */
+#gcal-dnd-overlay {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483646;
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  padding: 20px;
+  background: rgba(15, 23, 42, 0.42);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  box-sizing: border-box;
+  opacity: 0;
+  pointer-events: none;
+  transition: opacity 0.16s ease;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+#gcal-dnd-overlay.gcal-dnd-visible {
+  opacity: 1;
+  pointer-events: auto;
+}
+
+.gcal-dnd-zone {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  border-radius: 20px;
+  border: 2.5px dashed rgba(255, 255, 255, 0.55);
+  background: rgba(255, 255, 255, 0.86);
+  color: #1f1f1f;
+  text-align: center;
+  padding: 24px;
+  box-sizing: border-box;
+  transition: transform 0.15s ease, background-color 0.15s ease, border-color 0.15s ease, box-shadow 0.15s ease;
+  user-select: none;
+}
+
+.gcal-dnd-zone * {
+  pointer-events: none;
+}
+
+.gcal-dnd-zone[data-zone="pick"].gcal-dnd-active {
+  background: rgba(232, 240, 254, 0.96);
+  border-color: #1a73e8;
+  border-style: solid;
+  transform: scale(1.008);
+  box-shadow: 0 12px 32px rgba(26, 115, 232, 0.24);
+}
+
+.gcal-dnd-zone[data-zone="quick"].gcal-dnd-active {
+  background: rgba(230, 244, 234, 0.96);
+  border-color: #188038;
+  border-style: solid;
+  transform: scale(1.008);
+  box-shadow: 0 12px 32px rgba(24, 128, 56, 0.24);
+}
+
+.gcal-dnd-zone[data-zone="direct"].gcal-dnd-active {
+  background: rgba(232, 240, 254, 0.96);
+  border-color: #1a73e8;
+  border-style: solid;
+  transform: scale(1.006);
+  box-shadow: 0 12px 32px rgba(26, 115, 232, 0.24);
+}
+
+.gcal-dnd-icon {
+  width: 56px;
+  height: 56px;
+  border-radius: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 14px;
+  transition: transform 0.15s ease;
+}
+
+.gcal-dnd-zone[data-zone="pick"] .gcal-dnd-icon,
+.gcal-dnd-zone[data-zone="direct"] .gcal-dnd-icon {
+  background: #d2e3fc;
+  color: #174ea6;
+}
+
+.gcal-dnd-zone[data-zone="quick"] .gcal-dnd-icon {
+  background: #ceead6;
+  color: #0d652d;
+}
+
+.gcal-dnd-zone.gcal-dnd-active .gcal-dnd-icon {
+  transform: scale(1.08);
+}
+
+.gcal-dnd-badge {
+  font-size: 12px;
+  font-weight: 600;
+  letter-spacing: 0.4px;
+  padding: 4px 10px;
+  border-radius: 999px;
+  margin-bottom: 10px;
+}
+
+.gcal-dnd-zone[data-zone="pick"] .gcal-dnd-badge,
+.gcal-dnd-zone[data-zone="direct"] .gcal-dnd-badge {
+  background: rgba(26, 115, 232, 0.12);
+  color: #174ea6;
+}
+
+.gcal-dnd-zone[data-zone="quick"] .gcal-dnd-badge {
+  background: rgba(24, 128, 56, 0.12);
+  color: #0d652d;
+}
+
+.gcal-dnd-title {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 0 0 6px 0;
+  color: #202124;
+}
+
+.gcal-dnd-subtitle {
+  font-size: 14px;
+  color: #5f6368;
+  margin: 0;
+  max-width: 460px;
+  line-height: 1.5;
+}
+
+/* Dark Theme Overlay (matches Google Calendar Material 3 Dark Mode) */
+#gcal-dnd-overlay.gcal-theme-dark {
+  background: rgba(0, 0, 0, 0.6);
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone {
+  background: rgba(30, 31, 32, 0.9);
+  border-color: rgba(255, 255, 255, 0.22);
+  color: #e3e3e3;
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-title {
+  color: #e3e3e3;
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-subtitle {
+  color: #c4c7c5;
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-subtitle strong {
+  color: #f1f3f4;
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="pick"] .gcal-dnd-icon,
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="direct"] .gcal-dnd-icon {
+  background: rgba(138, 180, 248, 0.16);
+  color: #8ab4f8;
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="quick"] .gcal-dnd-icon {
+  background: rgba(129, 201, 149, 0.16);
+  color: #81c995;
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="pick"] .gcal-dnd-badge,
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="direct"] .gcal-dnd-badge {
+  background: rgba(138, 180, 248, 0.16);
+  color: #a8c7fa;
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="quick"] .gcal-dnd-badge {
+  background: rgba(129, 201, 149, 0.16);
+  color: #a8dab5;
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="pick"].gcal-dnd-active,
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="direct"].gcal-dnd-active {
+  background: rgba(25, 42, 68, 0.96);
+  border-color: #8ab4f8;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(138, 180, 248, 0.25);
+}
+
+#gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="quick"].gcal-dnd-active {
+  background: rgba(20, 48, 34, 0.96);
+  border-color: #81c995;
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(129, 201, 149, 0.25);
+}
+
+/* Status Toast */
+#gcal-ext-toast-container {
+  position: fixed;
+  bottom: 24px;
+  left: 24px;
+  z-index: 2147483647;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  pointer-events: none;
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+}
+
+.gcal-ext-toast {
+  pointer-events: auto;
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  min-width: 280px;
+  max-width: 440px;
+  padding: 12px 16px;
+  border-radius: 10px;
+  background: #202124;
+  color: #f8f9fa;
+  font-size: 13.5px;
+  line-height: 1.45;
+  box-shadow: 0 6px 20px rgba(0, 0, 0, 0.28);
+  animation: gcalToastIn 0.18s ease-out;
+}
+
+.gcal-ext-toast.gcal-toast-success {
+  background: #137333;
+}
+
+.gcal-ext-toast.gcal-toast-error {
+  background: #c5221f;
+}
+
+.gcal-ext-toast-spinner {
+  width: 16px;
+  height: 16px;
+  border: 2px solid rgba(255, 255, 255, 0.35);
+  border-top-color: #ffffff;
+  border-radius: 50%;
+  animation: gcalSpin 0.8s linear infinite;
+  flex-shrink: 0;
+}
+
+.gcal-ext-toast-text {
+  flex: 1;
+  word-break: break-word;
+}
+
+.gcal-ext-toast-action {
+  appearance: none;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  background: rgba(255, 255, 255, 0.14);
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 500;
+  padding: 4px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  flex-shrink: 0;
+}
+
+.gcal-ext-toast-action:hover {
+  background: rgba(255, 255, 255, 0.24);
+}
+
+.gcal-ext-toast-close {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: rgba(255, 255, 255, 0.75);
+  font-size: 18px;
+  line-height: 1;
+  cursor: pointer;
+  padding: 2px 4px;
+  flex-shrink: 0;
+}
+
+.gcal-ext-toast-close:hover {
+  color: #ffffff;
+}
+
+/* Subtle highlight pulse for Pick mode on Import & Export page */
+.gcal-ext-highlight-pulse {
+  outline: 2.5px solid #1a73e8 !important;
+  outline-offset: 4px !important;
+  border-radius: 6px !important;
+  transition: outline-color 0.3s ease;
+}
+
+@keyframes gcalSpin {
+  to {
+    transform: rotate(360deg);
+  }
+}
+
+@keyframes gcalToastIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* In-Page Preview & Calendar Picker Modal (Feature 2 & 4) */
+#gcal-pick-modal-backdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 2147483647;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 16px;
+  background: rgba(15, 23, 42, 0.45);
+  backdrop-filter: blur(4px);
+  -webkit-backdrop-filter: blur(4px);
+  font-family: "Google Sans", -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, sans-serif;
+  animation: gcalModalFadeIn 0.14s ease-out;
+}
+
+.gcal-pick-modal {
+  width: 100%;
+  max-width: 460px;
+  max-height: calc(100vh - 40px);
+  display: flex;
+  flex-direction: column;
+  background: #ffffff;
+  color: #202124;
+  border-radius: 20px;
+  box-shadow: 0 20px 50px rgba(0, 0, 0, 0.28);
+  overflow: hidden;
+  border: 1px solid rgba(0, 0, 0, 0.08);
+}
+
+.gcal-pick-modal-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 18px 20px 14px;
+  border-bottom: 1px solid #e8eaed;
+}
+
+.gcal-pick-modal-icon {
+  width: 38px;
+  height: 38px;
+  border-radius: 12px;
+  background: #e8f0fe;
+  color: #1a73e8;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.gcal-pick-modal-headtext {
+  flex: 1;
+  min-width: 0;
+}
+
+.gcal-pick-modal-title {
+  margin: 0;
+  font-size: 17px;
+  font-weight: 600;
+  line-height: 1.3;
+}
+
+.gcal-pick-modal-meta {
+  margin: 3px 0 0;
+  font-size: 12.5px;
+  color: #5f6368;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.gcal-pick-modal-close {
+  appearance: none;
+  border: none;
+  background: transparent;
+  width: 34px;
+  height: 34px;
+  border-radius: 50%;
+  color: #5f6368;
+  font-size: 22px;
+  line-height: 1;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-shrink: 0;
+}
+
+.gcal-pick-modal-close:hover {
+  background: rgba(60, 64, 67, 0.08);
+  color: #202124;
+}
+
+.gcal-pick-modal-body {
+  padding: 16px 20px;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.gcal-pick-preview-list {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+  max-height: 210px;
+  overflow-y: auto;
+  padding-right: 2px;
+}
+
+.gcal-pick-preview-item {
+  padding: 10px 12px;
+  border-radius: 12px;
+  background: #f8f9fa;
+  border: 1px solid #e8eaed;
+}
+
+.gcal-pick-preview-title {
+  font-size: 13.5px;
+  font-weight: 600;
+  color: #202124;
+  margin: 0 0 3px;
+  word-break: break-word;
+}
+
+.gcal-pick-preview-time {
+  font-size: 12px;
+  color: #5f6368;
+  margin: 0;
+}
+
+.gcal-pick-preview-more {
+  font-size: 12px;
+  color: #5f6368;
+  text-align: center;
+  padding: 4px 0 0;
+}
+
+.gcal-pick-field {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.gcal-pick-label {
+  font-size: 13px;
+  font-weight: 600;
+  color: #202124;
+}
+
+.gcal-pick-select,
+.gcal-pick-custom-input {
+  width: 100%;
+  padding: 10px 12px;
+  font-size: 13.5px;
+  font-family: inherit;
+  border: 1px solid #dadce0;
+  border-radius: 10px;
+  background: #ffffff;
+  color: #202124;
+  outline: none;
+  box-sizing: border-box;
+  transition: border-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.gcal-pick-select:focus,
+.gcal-pick-custom-input:focus {
+  border-color: #1a73e8;
+  box-shadow: 0 0 0 2px rgba(26, 115, 232, 0.18);
+}
+
+.gcal-pick-custom-input.gcal-hidden {
+  display: none;
+}
+
+.gcal-pick-modal-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 10px;
+  padding: 12px 20px 16px;
+  border-top: 1px solid #e8eaed;
+}
+
+.gcal-pick-link-btn {
+  appearance: none;
+  border: none;
+  background: transparent;
+  color: #5f6368;
+  font-size: 12.5px;
+  font-weight: 500;
+  cursor: pointer;
+  padding: 6px 8px;
+  border-radius: 8px;
+}
+
+.gcal-pick-link-btn:hover {
+  background: rgba(60, 64, 67, 0.08);
+  color: #202124;
+}
+
+.gcal-pick-footer-actions {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.gcal-pick-btn-cancel,
+.gcal-pick-btn-confirm {
+  appearance: none;
+  font-family: inherit;
+  font-size: 13.5px;
+  font-weight: 600;
+  padding: 8px 16px;
+  border-radius: 999px;
+  cursor: pointer;
+  transition: background-color 0.15s ease, box-shadow 0.15s ease;
+}
+
+.gcal-pick-btn-cancel {
+  border: 1px solid #dadce0;
+  background: transparent;
+  color: #3c4043;
+}
+
+.gcal-pick-btn-cancel:hover {
+  background: rgba(60, 64, 67, 0.06);
+}
+
+.gcal-pick-btn-confirm {
+  border: none;
+  background: #1a73e8;
+  color: #ffffff;
+}
+
+.gcal-pick-btn-confirm:hover {
+  background: #1765cc;
+  box-shadow: 0 2px 6px rgba(26, 115, 232, 0.35);
+}
+
+/* Dark Theme Modal */
+#gcal-pick-modal-backdrop.gcal-theme-dark {
+  background: rgba(0, 0, 0, 0.62);
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-modal {
+  background: #28292a;
+  color: #e3e3e3;
+  border-color: #3c4043;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-modal-header,
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-modal-footer {
+  border-color: #3c4043;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-modal-icon {
+  background: rgba(138, 180, 248, 0.16);
+  color: #8ab4f8;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-modal-meta,
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-preview-time,
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-preview-more,
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-modal-close,
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-link-btn {
+  color: #c4c7c5;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-modal-close:hover,
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-link-btn:hover {
+  background: rgba(232, 234, 237, 0.08);
+  color: #e3e3e3;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-preview-item {
+  background: #1e1f20;
+  border-color: #3c4043;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-preview-title,
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-label {
+  color: #e3e3e3;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-select,
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-custom-input {
+  background: #1e1f20;
+  border-color: #5f6368;
+  color: #e3e3e3;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-select:focus,
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-custom-input:focus {
+  border-color: #8ab4f8;
+  box-shadow: 0 0 0 2px rgba(138, 180, 248, 0.22);
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-btn-cancel {
+  border-color: #5f6368;
+  color: #e3e3e3;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-btn-cancel:hover {
+  background: rgba(232, 234, 237, 0.08);
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-btn-confirm {
+  background: #8ab4f8;
+  color: #062e6f;
+}
+
+#gcal-pick-modal-backdrop.gcal-theme-dark .gcal-pick-btn-confirm:hover {
+  background: #a8c7fa;
+}
+
+@keyframes gcalModalFadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}

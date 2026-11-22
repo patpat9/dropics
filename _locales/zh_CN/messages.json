@@ -1,0 +1,436 @@
+{
+  "extName": {
+    "message": "GCal 快捷导入"
+  },
+  "extDescription": {
+    "message": "在 Google Calendar 顶栏添加导入快捷入口，支持上下分屏拖拽导入 .ics / .csv 日历文件及右键链接导入。"
+  },
+  "popupSubtitle": {
+    "message": "顶栏直达 + 分屏拖拽导入 .ics"
+  },
+  "labelDefaultCalendar": {
+    "message": "快捷导入的目标日历"
+  },
+  "placeholderDefaultCalendar": {
+    "message": "输入目标日历名称"
+  },
+  "hintDefaultCalendar": {
+    "message": "用于下半区拖拽和右键网页 .ics 链接的自动导入。"
+  },
+  "guideTopPill": {
+    "message": "上半区"
+  },
+  "guideTopDesc": {
+    "message": "拖入 .ics/.csv 预览日程并在主页弹窗选择目标日历"
+  },
+  "guideBottomPill": {
+    "message": "下半区"
+  },
+  "guideBottomDesc": {
+    "message": "拖入自动后台导入目标日历，完成后自动跳到对应日期"
+  },
+  "statusSaved": {
+    "message": "已保存"
+  },
+  "toolbarImportLabel": {
+    "message": "导入"
+  },
+  "overlayDirectBadge": {
+    "message": "当前导入页"
+  },
+  "overlayDirectTitle": {
+    "message": "松开自动填入文件"
+  },
+  "overlayDirectSubtitle": {
+    "message": "直接填充到本页的 .ics / .csv 文件选择框中"
+  },
+  "overlayPickBadge": {
+    "message": "上半区 · 选择日历"
+  },
+  "overlayPickTitle": {
+    "message": "打开导入页并选日历"
+  },
+  "overlayPickSubtitle": {
+    "message": "自动跳转到导入页并填好文件，方便选择要导入的具体日历"
+  },
+  "overlayQuickBadge": {
+    "message": "下半区 · 极速导入"
+  },
+  "overlayQuickTitle": {
+    "message": "自动导入默认日历（不离开主页）"
+  },
+  "overlayQuickSubtitlePrefix": {
+    "message": "目标日历："
+  },
+  "overlayQuickSubtitleSuffix": {
+    "message": " · 后台静默导入，支持同时拖入多个 .ics 文件"
+  },
+  "defaultCalendarFallback": {
+    "message": "Google 默认主日历"
+  },
+  "toastCloseLabel": {
+    "message": "关闭"
+  },
+  "toastUnsupportedFile": {
+    "message": "仅支持拖入 .ics 或 .csv 日历文件。"
+  },
+  "toastFileTooLarge": {
+    "message": "文件 \"$FILE$\" 超过 6 MB，请改用原生导入页手动上传。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastExtensionReloaded": {
+    "message": "扩展刚刚重载，请先刷新当前 Google Calendar 页面后再拖入。"
+  },
+  "btnRefreshNow": {
+    "message": "立即刷新"
+  },
+  "toastDirectFilled": {
+    "message": "已填入 \"$FILE$\"，选择日历后点击 Import 即可。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastDirectNotRecognized": {
+    "message": "已尝试填入 \"$FILE$\"，但页面未刷新文件名，请查看控制台日志或手动选择。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastInputNotFoundRefresh": {
+    "message": "未找到本页的文件上传控件，请刷新页面后重试。"
+  },
+  "toastPickSingleNotice": {
+    "message": "选日历模式每次处理 1 个文件，已为你载入 \"$FILE$\"。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastStageFailed": {
+    "message": "准备导入失败：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickProgressMulti": {
+    "message": "($INDEX$/$TOTAL$) 正在后台导入 \"$FILE$\"...",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "file": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickProgressSingle": {
+    "message": "正在后台导入 \"$FILE$\"...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickSuccessSingle": {
+    "message": "导入完成$CAL$：$DETAIL$",
+    "placeholders": {
+      "cal": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickSuccessMulti": {
+    "message": "已成功后台导入 $DONE$/$TOTAL$ 个文件$CAL$",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "cal": {
+        "content": "$3"
+      }
+    }
+  },
+  "calParenFormat": {
+    "message": "（$NAME$）",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickJumping": {
+    "message": "$MSG$ · 正在跳转至 $DATE$...",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickJumped": {
+    "message": "$MSG$ · 已跳转至 $DATE$",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "btnJumpToDate": {
+    "message": "跳转到 $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnReturnOriginDate": {
+    "message": "回到原日期"
+  },
+  "toastQuickPartialFail": {
+    "message": "成功 $OK$ 个，失败 $FAIL$ 个：$DETAIL$",
+    "placeholders": {
+      "ok": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "detail": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickFailed": {
+    "message": "导入未完成：$DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnViewImportTab": {
+    "message": "查看导入页"
+  },
+  "btnOpenImportPage": {
+    "message": "打开导入页"
+  },
+  "toastQuickTimeout": {
+    "message": "后台导入超时，请手动检查导入页。"
+  },
+  "toastFillingFile": {
+    "message": "正在填入 \"$FILE$\"...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errInputNotFound": {
+    "message": "导入页未找到文件上传框（可能未登录或页面改版）"
+  },
+  "toastInputNotFoundManual": {
+    "message": "未找到导入页的文件选择框，请手动选择文件。"
+  },
+  "toastPickNotRecognized": {
+    "message": "已定位上传框，但 Google Calendar 未识别 \"$FILE$\"（已输出调试信息到 Console）。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastPickSuccess": {
+    "message": "已自动填入 \"$FILE$\"，请选择目标日历后点击 Import。",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnBackToCalendar": {
+    "message": "返回日历"
+  },
+  "errQuickNotRecognized": {
+    "message": "页面未识别自动填入的 \"$FILE$\"，请手动检查导入页",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownNotFound": {
+    "message": "未找到“添加到日历”下拉框"
+  },
+  "errCalendarNotFound": {
+    "message": "未找到名为 \"$NAME$\" 的日历",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownExpandFailed": {
+    "message": "未能展开日历列表下拉框"
+  },
+  "errImportBtnDisabled": {
+    "message": "Import 按钮未变为可点击状态，文件可能未被识别"
+  },
+  "errResultNotCaptured": {
+    "message": "已点击 Import，但未捕获到 Google Calendar 的完成提示，请检查导入页。"
+  },
+  "errAutoImportException": {
+    "message": "自动导入异常：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "errStartQuickImportFailed": {
+    "message": "无法启动后台导入"
+  },
+  "commandOpenFilePicker": {
+    "message": "选择要导入的 .ics / .csv 文件"
+  },
+  "contextMenuImportIcs": {
+    "message": "导入此 .ics 到 Google Calendar"
+  },
+  "ctxFetchingLink": {
+    "message": "正在获取日历文件..."
+  },
+  "ctxFetchFailed": {
+    "message": "获取 .ics 链接失败：$ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "ctxImportingFile": {
+    "message": "正在将 \"$FILE$\" 导入到 Google Calendar...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideShortcutDesc": {
+    "message": "快捷键拉起文件框，一次选择 1 个或多个 .ics/.csv 批量导入"
+  },
+  "optionCustomCalendar": {
+    "message": "手动输入日历名..."
+  },
+  "overlayPickTitleModal": {
+    "message": "预览日程并选择日历（不离开主页）"
+  },
+  "overlayPickSubtitleModal": {
+    "message": "松手后弹窗预览标题与时间并选目标日历，支持一次拖入多个文件"
+  },
+  "previewAllDay": {
+    "message": "全天"
+  },
+  "modalMetaSingle": {
+    "message": "$FILE$ · 共 $COUNT$ 条日程",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalMetaMulti": {
+    "message": "$FILES$ 个文件 · 共 $COUNT$ 条日程",
+    "placeholders": {
+      "files": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalPickTitle": {
+    "message": "导入到 Google Calendar"
+  },
+  "modalSelectCalendarLabel": {
+    "message": "添加到日历"
+  },
+  "modalOpenNativePage": {
+    "message": "改用原生导入页"
+  },
+  "modalBtnCancel": {
+    "message": "取消"
+  },
+  "modalBtnImportMulti": {
+    "message": "导入 ($COUNT$ 个文件)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "modalMoreEvents": {
+    "message": "还有 $COUNT$ 条日程",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastSkippedInvalidFiles": {
+    "message": "已跳过 $COUNT$ 个不支持或超大的文件。",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideHeading": {
+    "message": "使用方式"
+  },
+  "guideToolbarPill": {
+    "message": "顶栏图标"
+  },
+  "guideToolbarDesc": {
+    "message": "单击进导入导出页 · Alt+单击直接弹出多文件选择框"
+  },
+  "guideRightClickPill": {
+    "message": "右键链接"
+  },
+  "guideRightClickDesc": {
+    "message": "在任意网页右键 .ics 链接，后台直接抓取并导入日历"
+  },
+  "btnSyncCalendars": {
+    "message": "从导入页精确同步可写入日历列表"
+  },
+  "statusSynced": {
+    "message": "已同步"
+  }
+}

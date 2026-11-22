@@ -1,0 +1,436 @@
+{
+  "extName": {
+    "message": "GCal Importación Rápida"
+  },
+  "extDescription": {
+    "message": "Añade un acceso directo de importación a la barra de Google Calendar y permite arrastrar y soltar archivos .ics/.csv en pantalla dividida."
+  },
+  "popupSubtitle": {
+    "message": "Acceso directo + arrastrar y soltar .ics"
+  },
+  "labelDefaultCalendar": {
+    "message": "Calendario destino para importación rápida"
+  },
+  "placeholderDefaultCalendar": {
+    "message": "Introduce el nombre del calendario"
+  },
+  "hintDefaultCalendar": {
+    "message": "Se usa al soltar en la mitad inferior o hacer clic derecho en enlaces .ics."
+  },
+  "guideTopPill": {
+    "message": "Mitad superior"
+  },
+  "guideTopDesc": {
+    "message": "Suelta .ics/.csv para previsualizar eventos y elegir calendario aquí"
+  },
+  "guideBottomPill": {
+    "message": "Mitad inferior"
+  },
+  "guideBottomDesc": {
+    "message": "Suelta para importar en segundo plano y saltar a la fecha del evento"
+  },
+  "statusSaved": {
+    "message": "Guardado"
+  },
+  "toolbarImportLabel": {
+    "message": "Importar"
+  },
+  "overlayDirectBadge": {
+    "message": "Página de importación"
+  },
+  "overlayDirectTitle": {
+    "message": "Suelta para cargar el archivo"
+  },
+  "overlayDirectSubtitle": {
+    "message": "Rellena automáticamente el selector de archivos .ics / .csv en esta página"
+  },
+  "overlayPickBadge": {
+    "message": "Mitad superior · Elegir calendario"
+  },
+  "overlayPickTitle": {
+    "message": "Abrir importación y elegir calendario"
+  },
+  "overlayPickSubtitle": {
+    "message": "Abre la página de importación con el archivo cargado para elegir el calendario"
+  },
+  "overlayQuickBadge": {
+    "message": "Mitad inferior · Importación rápida"
+  },
+  "overlayQuickTitle": {
+    "message": "Importar al calendario predeterminado"
+  },
+  "overlayQuickSubtitlePrefix": {
+    "message": "Calendario destino: "
+  },
+  "overlayQuickSubtitleSuffix": {
+    "message": " · Se ejecuta en segundo plano sin salir de esta página (admite varios archivos)"
+  },
+  "defaultCalendarFallback": {
+    "message": "Calendario predeterminado de Google"
+  },
+  "toastCloseLabel": {
+    "message": "Cerrar"
+  },
+  "toastUnsupportedFile": {
+    "message": "Solo se admiten archivos de calendario .ics o .csv."
+  },
+  "toastFileTooLarge": {
+    "message": "\"$FILE$\" supera los 6 MB. Súbelo manualmente en la página de importación.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastExtensionReloaded": {
+    "message": "La extensión se recargó. Actualiza Google Calendar antes de soltar archivos."
+  },
+  "btnRefreshNow": {
+    "message": "Actualizar"
+  },
+  "toastDirectFilled": {
+    "message": "Se cargó \"$FILE$\". Elige un calendario y haz clic en Importar.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastDirectNotRecognized": {
+    "message": "Se intentó cargar \"$FILE$\", pero la página no se actualizó. Revisa la consola o selecciónalo manualmente.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastInputNotFoundRefresh": {
+    "message": "No se encontró el campo de archivo en esta página. Actualiza e inténtalo de nuevo."
+  },
+  "toastPickSingleNotice": {
+    "message": "El modo de selección procesa 1 archivo a la vez. Se cargó \"$FILE$\".",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastStageFailed": {
+    "message": "Error al preparar la importación: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickProgressMulti": {
+    "message": "($INDEX$/$TOTAL$) Importando \"$FILE$\" en segundo plano...",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "file": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickProgressSingle": {
+    "message": "Importando \"$FILE$\" en segundo plano...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickSuccessSingle": {
+    "message": "Importado$CAL$: $DETAIL$",
+    "placeholders": {
+      "cal": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickSuccessMulti": {
+    "message": "Se importaron $DONE$/$TOTAL$ archivos$CAL$",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "cal": {
+        "content": "$3"
+      }
+    }
+  },
+  "calParenFormat": {
+    "message": " ($NAME$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickJumping": {
+    "message": "$MSG$ · Yendo a $DATE$...",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickJumped": {
+    "message": "$MSG$ · Saltó a $DATE$",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "btnJumpToDate": {
+    "message": "Ir a $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnReturnOriginDate": {
+    "message": "Fecha anterior"
+  },
+  "toastQuickPartialFail": {
+    "message": "$OK$ exitosos, $FAIL$ fallidos: $DETAIL$",
+    "placeholders": {
+      "ok": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "detail": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickFailed": {
+    "message": "Importación incompleta: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnViewImportTab": {
+    "message": "Ver pestaña"
+  },
+  "btnOpenImportPage": {
+    "message": "Abrir importación"
+  },
+  "toastQuickTimeout": {
+    "message": "Tiempo de espera agotado en segundo plano. Revisa la página de importación."
+  },
+  "toastFillingFile": {
+    "message": "Cargando \"$FILE$\"...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errInputNotFound": {
+    "message": "No se encontró el campo de subida (sesión cerrada o cambio de interfaz)."
+  },
+  "toastInputNotFoundManual": {
+    "message": "No se encontró el selector de archivo. Selecciónalo manualmente."
+  },
+  "toastPickNotRecognized": {
+    "message": "Se encontró el campo, pero Google Calendar no reconoció \"$FILE$\" (detalles en la consola).",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastPickSuccess": {
+    "message": "Se cargó \"$FILE$\". Elige un calendario y haz clic en Importar.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnBackToCalendar": {
+    "message": "Volver al calendario"
+  },
+  "errQuickNotRecognized": {
+    "message": "Google Calendar no reconoció \"$FILE$\". Revisa la página de importación.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownNotFound": {
+    "message": "No se encontró el menú \"Añadir al calendario\"."
+  },
+  "errCalendarNotFound": {
+    "message": "No se encontró el calendario \"$NAME$\".",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownExpandFailed": {
+    "message": "No se pudo abrir la lista de calendarios."
+  },
+  "errImportBtnDisabled": {
+    "message": "El botón Importar siguió deshabilitado; puede que el archivo no se haya reconocido."
+  },
+  "errResultNotCaptured": {
+    "message": "Se pulsó Importar, pero no se detectó confirmación. Revisa la página de importación."
+  },
+  "errAutoImportException": {
+    "message": "Error de importación automática: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "errStartQuickImportFailed": {
+    "message": "No se pudo iniciar la importación en segundo plano."
+  },
+  "commandOpenFilePicker": {
+    "message": "Seleccionar archivo(s) .ics / .csv para importar"
+  },
+  "contextMenuImportIcs": {
+    "message": "Importar .ics a Google Calendar"
+  },
+  "ctxFetchingLink": {
+    "message": "Descargando archivo de calendario..."
+  },
+  "ctxFetchFailed": {
+    "message": "No se pudo obtener el enlace .ics: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "ctxImportingFile": {
+    "message": "Importando \"$FILE$\" a Google Calendar...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideShortcutDesc": {
+    "message": "Elige uno o varios archivos .ics/.csv para importación en lote"
+  },
+  "optionCustomCalendar": {
+    "message": "Nombre personalizado..."
+  },
+  "overlayPickTitleModal": {
+    "message": "Vista previa y elegir calendario"
+  },
+  "overlayPickSubtitleModal": {
+    "message": "Previsualiza eventos y elige el calendario sin salir de esta página (admite varios archivos)"
+  },
+  "previewAllDay": {
+    "message": "Todo el día"
+  },
+  "modalMetaSingle": {
+    "message": "$FILE$ · $COUNT$ evento(s)",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalMetaMulti": {
+    "message": "$FILES$ archivos · $COUNT$ evento(s)",
+    "placeholders": {
+      "files": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalPickTitle": {
+    "message": "Importar a Google Calendar"
+  },
+  "modalSelectCalendarLabel": {
+    "message": "Añadir al calendario"
+  },
+  "modalOpenNativePage": {
+    "message": "Página nativa"
+  },
+  "modalBtnCancel": {
+    "message": "Cancelar"
+  },
+  "modalBtnImportMulti": {
+    "message": "Importar ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "modalMoreEvents": {
+    "message": "+$COUNT$ evento(s) más",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastSkippedInvalidFiles": {
+    "message": "Se omitieron $COUNT$ archivo(s) no admitidos o demasiado grandes.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideHeading": {
+    "message": "Formas de importar"
+  },
+  "guideToolbarPill": {
+    "message": "Barra"
+  },
+  "guideToolbarDesc": {
+    "message": "Clic para Importar/Exportar · Alt+clic para elegir archivos"
+  },
+  "guideRightClickPill": {
+    "message": "Clic der."
+  },
+  "guideRightClickDesc": {
+    "message": "Clic derecho en cualquier enlace .ics web para importar en segundo plano"
+  },
+  "btnSyncCalendars": {
+    "message": "Sincronizar lista exacta desde la página de importación"
+  },
+  "statusSynced": {
+    "message": "Sincronizado"
+  }
+}

@@ -1,0 +1,436 @@
+{
+  "extName": {
+    "message": "GCal 빠른 가져오기"
+  },
+  "extDescription": {
+    "message": "Google 캘린더 상단 바에 가져오기 바로가기를 추가하고 상하 분할 드래그 앤 드롭으로 .ics/.csv 파일을 빠르게 가져옵니다."
+  },
+  "popupSubtitle": {
+    "message": "상단 바로가기 + 분할 드래그 앤 드롭 .ics"
+  },
+  "labelDefaultCalendar": {
+    "message": "빠른 가져오기 대상 캘린더"
+  },
+  "placeholderDefaultCalendar": {
+    "message": "캘린더 이름 입력"
+  },
+  "hintDefaultCalendar": {
+    "message": "하단 드롭 및 웹 .ics 링크 우클릭 가져오기에 사용됩니다."
+  },
+  "guideTopPill": {
+    "message": "상단 영역"
+  },
+  "guideTopDesc": {
+    "message": ".ics/.csv 드롭 시 일정을 미리보고 페이지 내에서 캘린더 선택"
+  },
+  "guideBottomPill": {
+    "message": "하단 영역"
+  },
+  "guideBottomDesc": {
+    "message": "드롭만으로 대상 캘린더에 자동 가져오기 및 일정 날짜로 이동"
+  },
+  "statusSaved": {
+    "message": "저장됨"
+  },
+  "toolbarImportLabel": {
+    "message": "가져오기"
+  },
+  "overlayDirectBadge": {
+    "message": "가져오기 페이지"
+  },
+  "overlayDirectTitle": {
+    "message": "놓아서 파일 자동 입력"
+  },
+  "overlayDirectSubtitle": {
+    "message": "이 페이지의 .ics / .csv 파일 선택란에 자동으로 채웁니다"
+  },
+  "overlayPickBadge": {
+    "message": "상단 영역 · 캘린더 선택"
+  },
+  "overlayPickTitle": {
+    "message": "가져오기 페이지에서 캘린더 선택"
+  },
+  "overlayPickSubtitle": {
+    "message": "파일을 미리 채운 상태로 가져오기 페이지를 열어 캘린더를 선택합니다"
+  },
+  "overlayQuickBadge": {
+    "message": "하단 영역 · 빠른 가져오기"
+  },
+  "overlayQuickTitle": {
+    "message": "기본 캘린더로 자동 가져오기"
+  },
+  "overlayQuickSubtitlePrefix": {
+    "message": "대상 캘린더: "
+  },
+  "overlayQuickSubtitleSuffix": {
+    "message": " · 현재 페이지를 떠나지 않고 백그라운드 실행 (다중 파일 지원)"
+  },
+  "defaultCalendarFallback": {
+    "message": "Google 기본 캘린더"
+  },
+  "toastCloseLabel": {
+    "message": "닫기"
+  },
+  "toastUnsupportedFile": {
+    "message": ".ics 또는 .csv 캘린더 파일만 지원합니다."
+  },
+  "toastFileTooLarge": {
+    "message": "\"$FILE$\" 파일이 6 MB를 초과합니다. 가져오기 페이지에서 직접 업로드해 주세요.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastExtensionReloaded": {
+    "message": "확장 프로그램이 다시 로드되었습니다. Google 캘린더를 새로고침한 뒤 드롭해 주세요."
+  },
+  "btnRefreshNow": {
+    "message": "새로고침"
+  },
+  "toastDirectFilled": {
+    "message": "\"$FILE$\" 입력 완료. 캘린더를 선택하고 가져오기를 클릭하세요.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastDirectNotRecognized": {
+    "message": "\"$FILE$\" 입력을 시도했지만 페이지가 갱신되지 않았습니다. 콘솔을 확인하거나 직접 선택해 주세요.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastInputNotFoundRefresh": {
+    "message": "이 페이지에서 파일 업로드 입력란을 찾지 못했습니다. 새로고침 후 다시 시도하세요."
+  },
+  "toastPickSingleNotice": {
+    "message": "캘린더 선택 모드는 한 번에 1개 파일만 처리합니다. \"$FILE$\"을(를) 불러왔습니다.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastStageFailed": {
+    "message": "가져오기 준비 실패: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickProgressMulti": {
+    "message": "($INDEX$/$TOTAL$) \"$FILE$\" 백그라운드에서 가져오는 중...",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "file": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickProgressSingle": {
+    "message": "\"$FILE$\" 백그라운드에서 가져오는 중...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickSuccessSingle": {
+    "message": "가져오기 완료$CAL$: $DETAIL$",
+    "placeholders": {
+      "cal": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickSuccessMulti": {
+    "message": "$DONE$/$TOTAL$개 파일 가져오기 완료$CAL$",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "cal": {
+        "content": "$3"
+      }
+    }
+  },
+  "calParenFormat": {
+    "message": " ($NAME$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickJumping": {
+    "message": "$MSG$ · $DATE$(으)로 이동 중...",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickJumped": {
+    "message": "$MSG$ · $DATE$(으)로 이동함",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "btnJumpToDate": {
+    "message": "$DATE$로 이동",
+    "placeholders": {
+      "date": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnReturnOriginDate": {
+    "message": "이전 날짜로"
+  },
+  "toastQuickPartialFail": {
+    "message": "성공 $OK$건, 실패 $FAIL$건: $DETAIL$",
+    "placeholders": {
+      "ok": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "detail": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickFailed": {
+    "message": "가져오기 미완료: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnViewImportTab": {
+    "message": "가져오기 탭 보기"
+  },
+  "btnOpenImportPage": {
+    "message": "가져오기 페이지"
+  },
+  "toastQuickTimeout": {
+    "message": "백그라운드 가져오기 시간이 초과되었습니다. 가져오기 페이지를 확인해 주세요."
+  },
+  "toastFillingFile": {
+    "message": "\"$FILE$\" 입력 중...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errInputNotFound": {
+    "message": "파일 업로드 입력란을 찾을 수 없습니다(로그아웃되었거나 화면이 변경됨)."
+  },
+  "toastInputNotFoundManual": {
+    "message": "가져오기 페이지에서 파일 선택란을 찾지 못했습니다. 직접 선택해 주세요."
+  },
+  "toastPickNotRecognized": {
+    "message": "입력란은 찾았으나 Google 캘린더가 \"$FILE$\"을(를) 인식하지 못했습니다(콘솔 로그 확인).",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastPickSuccess": {
+    "message": "\"$FILE$\" 자동 입력 완료. 캘린더를 선택하고 가져오기를 클릭하세요.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnBackToCalendar": {
+    "message": "캘린더로 돌아가기"
+  },
+  "errQuickNotRecognized": {
+    "message": "Google 캘린더가 \"$FILE$\"을(를) 인식하지 못했습니다. 가져오기 페이지를 확인하세요.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownNotFound": {
+    "message": "\"캘린더에 추가\" 드롭다운을 찾을 수 없습니다."
+  },
+  "errCalendarNotFound": {
+    "message": "\"$NAME$\" 캘린더를 찾을 수 없습니다.",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownExpandFailed": {
+    "message": "캘린더 목록을 열지 못했습니다."
+  },
+  "errImportBtnDisabled": {
+    "message": "가져오기 버튼이 활성화되지 않았습니다. 파일이 인식되지 않았을 수 있습니다."
+  },
+  "errResultNotCaptured": {
+    "message": "가져오기를 클릭했으나 완료 메시지를 확인하지 못했습니다. 가져오기 페이지를 확인해 주세요."
+  },
+  "errAutoImportException": {
+    "message": "자동 가져오기 오류: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "errStartQuickImportFailed": {
+    "message": "백그라운드 가져오기를 시작할 수 없습니다."
+  },
+  "commandOpenFilePicker": {
+    "message": "가져올 .ics / .csv 파일 선택"
+  },
+  "contextMenuImportIcs": {
+    "message": "Google 캘린더로 .ics 가져오기"
+  },
+  "ctxFetchingLink": {
+    "message": "캘린더 파일을 불러오는 중..."
+  },
+  "ctxFetchFailed": {
+    "message": ".ics 링크 불러오기 실패: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "ctxImportingFile": {
+    "message": "\"$FILE$\"을(를) Google 캘린더로 가져오는 중...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideShortcutDesc": {
+    "message": "단축키로 1개 이상의 .ics/.csv 파일을 선택해 일괄 가져오기"
+  },
+  "optionCustomCalendar": {
+    "message": "캘린더 이름 직접 입력..."
+  },
+  "overlayPickTitleModal": {
+    "message": "일정 미리보기 및 캘린더 선택"
+  },
+  "overlayPickSubtitleModal": {
+    "message": "페이지를 떠나지 않고 일정을 확인한 뒤 대상 캘린더를 선택합니다(다중 파일 지원)"
+  },
+  "previewAllDay": {
+    "message": "종일"
+  },
+  "modalMetaSingle": {
+    "message": "$FILE$ · 일정 $COUNT$개",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalMetaMulti": {
+    "message": "파일 $FILES$개 · 일정 $COUNT$개",
+    "placeholders": {
+      "files": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalPickTitle": {
+    "message": "Google 캘린더로 가져오기"
+  },
+  "modalSelectCalendarLabel": {
+    "message": "캘린더에 추가"
+  },
+  "modalOpenNativePage": {
+    "message": "기본 가져오기 페이지"
+  },
+  "modalBtnCancel": {
+    "message": "취소"
+  },
+  "modalBtnImportMulti": {
+    "message": "가져오기 ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "modalMoreEvents": {
+    "message": "외 $COUNT$개 일정",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastSkippedInvalidFiles": {
+    "message": "지원하지 않거나 용량이 초과된 파일 $COUNT$개를 건너뛰었습니다.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideHeading": {
+    "message": "가져오기 방법"
+  },
+  "guideToolbarPill": {
+    "message": "상단 바"
+  },
+  "guideToolbarDesc": {
+    "message": "클릭으로 가져오기/내보내기 열기 · Alt+클릭으로 바로 파일 선택"
+  },
+  "guideRightClickPill": {
+    "message": "우클릭"
+  },
+  "guideRightClickDesc": {
+    "message": "웹페이지의 .ics 링크를 우클릭해 백그라운드에서 바로 가져오기"
+  },
+  "btnSyncCalendars": {
+    "message": "가져오기 페이지에서 정확한 캘린더 목록 동기화"
+  },
+  "statusSynced": {
+    "message": "동기화됨"
+  }
+}

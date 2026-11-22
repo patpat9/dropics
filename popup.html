@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title data-i18n="extName">GCal Quick Import</title>
+  <link rel="stylesheet" href="popup.css" />
+</head>
+<body>
+  <div class="popup">
+    <header class="header">
+      <div class="header-icon">
+        <svg viewBox="0 0 24 24" width="20" height="20" fill="currentColor">
+          <path d="M11 16V7.85l-2.6 2.6L7 9l5-5 5 5-1.4 1.45-2.6-2.6V16h-2Zm-5 4q-.825 0-1.412-.587T4 18v-3h2v3h12v-3h2v3q0 .825-.587 1.413T18 20H6Z"/>
+        </svg>
+      </div>
+      <div>
+        <h1 data-i18n="extName">GCal Quick Import</h1>
+        <p class="subtitle" data-i18n="popupSubtitle">Toolbar shortcut + split drag &amp; drop .ics</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <div class="label-row">
+        <label class="field-label" for="defaultCalendarSelect" data-i18n="labelDefaultCalendar">
+          Target calendar for quick import
+        </label>
+        <div class="label-actions">
+          <span id="saveStatus" class="save-status" aria-live="polite"></span>
+          <button
+            id="syncCalendarsBtn"
+            type="button"
+            class="icon-btn"
+            data-i18n-title="btnSyncCalendars"
+            title="Sync exact list from Import page"
+            aria-label="Sync calendars"
+          >
+            <svg viewBox="0 0 24 24" width="15" height="15" fill="currentColor" aria-hidden="true">
+              <path d="M12 20q-3.35 0-5.675-2.325T4 12q0-3.35 2.325-5.675T12 4q1.725 0 3.3.712T18 6.75V4h2v7h-7V9h4.2q-.8-1.4-2.187-2.2T12 6Q9.5 6 7.75 7.75T6 12q0 2.5 1.75 4.25T12 18q1.925 0 3.475-1.1T17.65 14h2.1q-.7 2.65-2.85 4.325T12 20Z"/>
+            </svg>
+          </button>
+        </div>
+      </div>
+      <select id="defaultCalendarSelect" class="select-input"></select>
+      <input
+        id="defaultCalendarName"
+        type="text"
+        class="custom-input hidden"
+        data-i18n-placeholder="placeholderDefaultCalendar"
+        placeholder="Enter calendar name"
+        autocomplete="off"
+      />
+      <p class="hint" data-i18n="hintDefaultCalendar">
+        Used for bottom-half drop and right-click .ics link imports.
+      </p>
+    </section>
+
+    <section class="card guide">
+      <div class="guide-heading" data-i18n="guideHeading">Ways to import</div>
+      <div class="guide-row">
+        <span class="pill blue" data-i18n="guideTopPill">Top half</span>
+        <span class="guide-desc" data-i18n="guideTopDesc">Drop .ics/.csv to preview events &amp; pick a calendar in-page</span>
+      </div>
+      <div class="guide-row">
+        <span class="pill green" data-i18n="guideBottomPill">Bottom half</span>
+        <span class="guide-desc" data-i18n="guideBottomDesc">Drop to auto-import to target calendar &amp; jump to event date</span>
+      </div>
+      <div class="guide-row">
+        <span class="pill indigo" data-i18n="guideToolbarPill">Toolbar</span>
+        <span class="guide-desc" data-i18n="guideToolbarDesc">Click for Import &amp; Export · Alt+Click to pick files directly</span>
+      </div>
+      <div class="guide-row">
+        <span class="pill gray">Alt+I</span>
+        <span class="guide-desc" data-i18n="guideShortcutDesc">Pick one or multiple .ics/.csv files for batch import</span>
+      </div>
+      <div class="guide-row">
+        <span class="pill amber" data-i18n="guideRightClickPill">Right-click</span>
+        <span class="guide-desc" data-i18n="guideRightClickDesc">Right-click any web .ics link to import directly in background</span>
+      </div>
+    </section>
+  </div>
+  <script src="popup.js"></script>
+</body>
+</html>

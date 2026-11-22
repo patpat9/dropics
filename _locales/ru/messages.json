@@ -1,0 +1,436 @@
+{
+  "extName": {
+    "message": "GCal Быстрый импорт"
+  },
+  "extDescription": {
+    "message": "Добавляет кнопку импорта в панель Google Календаря и раздельный drag-and-drop для быстрого импорта файлов .ics/.csv."
+  },
+  "popupSubtitle": {
+    "message": "Кнопка в панели + drag & drop .ics"
+  },
+  "labelDefaultCalendar": {
+    "message": "Целевой календарь для быстрого импорта"
+  },
+  "placeholderDefaultCalendar": {
+    "message": "Введите название календаря"
+  },
+  "hintDefaultCalendar": {
+    "message": "Используется для нижней зоны и импорта .ics-ссылок через контекстное меню."
+  },
+  "guideTopPill": {
+    "message": "Верхняя зона"
+  },
+  "guideTopDesc": {
+    "message": "Перетащите .ics/.csv для предпросмотра событий и выбора календаря"
+  },
+  "guideBottomPill": {
+    "message": "Нижняя зона"
+  },
+  "guideBottomDesc": {
+    "message": "Перетащите для фонового автоимпорта и перехода к дате события"
+  },
+  "statusSaved": {
+    "message": "Сохранено"
+  },
+  "toolbarImportLabel": {
+    "message": "Импорт"
+  },
+  "overlayDirectBadge": {
+    "message": "Страница импорта"
+  },
+  "overlayDirectTitle": {
+    "message": "Отпустите, чтобы подставить файл"
+  },
+  "overlayDirectSubtitle": {
+    "message": "Автоматически заполняет поле выбора .ics / .csv на этой странице"
+  },
+  "overlayPickBadge": {
+    "message": "Верхняя зона · Выбор календаря"
+  },
+  "overlayPickTitle": {
+    "message": "Открыть импорт и выбрать календарь"
+  },
+  "overlayPickSubtitle": {
+    "message": "Откроет страницу импорта с загруженным файлом, чтобы выбрать нужный календарь"
+  },
+  "overlayQuickBadge": {
+    "message": "Нижняя зона · Быстрый импорт"
+  },
+  "overlayQuickTitle": {
+    "message": "Импорт в календарь по умолчанию"
+  },
+  "overlayQuickSubtitlePrefix": {
+    "message": "Целевой календарь: "
+  },
+  "overlayQuickSubtitleSuffix": {
+    "message": " · Выполняется в фоне без ухода со страницы (можно несколько файлов)"
+  },
+  "defaultCalendarFallback": {
+    "message": "Календарь Google по умолчанию"
+  },
+  "toastCloseLabel": {
+    "message": "Закрыть"
+  },
+  "toastUnsupportedFile": {
+    "message": "Поддерживаются только файлы календаря .ics или .csv."
+  },
+  "toastFileTooLarge": {
+    "message": "Файл «$FILE$» превышает 6 МБ. Загрузите его вручную на странице импорта.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastExtensionReloaded": {
+    "message": "Расширение перезагружено. Обновите страницу Google Календаря перед перетаскиванием."
+  },
+  "btnRefreshNow": {
+    "message": "Обновить"
+  },
+  "toastDirectFilled": {
+    "message": "Файл «$FILE$» добавлен. Выберите календарь и нажмите «Импортировать».",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastDirectNotRecognized": {
+    "message": "Не удалось обновить имя файла «$FILE$». Проверьте консоль или выберите файл вручную.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastInputNotFoundRefresh": {
+    "message": "Поле загрузки файла не найдено. Обновите страницу и попробуйте снова."
+  },
+  "toastPickSingleNotice": {
+    "message": "Режим выбора обрабатывает по 1 файлу. Загружен «$FILE$».",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastStageFailed": {
+    "message": "Не удалось подготовить импорт: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickProgressMulti": {
+    "message": "($INDEX$/$TOTAL$) Фоновый импорт «$FILE$»...",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "file": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickProgressSingle": {
+    "message": "Фоновый импорт «$FILE$»...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickSuccessSingle": {
+    "message": "Импортировано$CAL$: $DETAIL$",
+    "placeholders": {
+      "cal": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickSuccessMulti": {
+    "message": "Импортировано файлов: $DONE$/$TOTAL$$CAL$",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "cal": {
+        "content": "$3"
+      }
+    }
+  },
+  "calParenFormat": {
+    "message": " ($NAME$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickJumping": {
+    "message": "$MSG$ · Переход к $DATE$...",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickJumped": {
+    "message": "$MSG$ · Переход к $DATE$",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "btnJumpToDate": {
+    "message": "К $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnReturnOriginDate": {
+    "message": "Назад к дате"
+  },
+  "toastQuickPartialFail": {
+    "message": "Успешно: $OK$, ошибок: $FAIL$ — $DETAIL$",
+    "placeholders": {
+      "ok": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "detail": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickFailed": {
+    "message": "Импорт не завершён: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnViewImportTab": {
+    "message": "Открыть вкладку"
+  },
+  "btnOpenImportPage": {
+    "message": "Страница импорта"
+  },
+  "toastQuickTimeout": {
+    "message": "Время ожидания фонового импорта истекло. Проверьте страницу импорта."
+  },
+  "toastFillingFile": {
+    "message": "Загрузка «$FILE$»...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errInputNotFound": {
+    "message": "Поле загрузки не найдено (возможно, нет входа или изменился интерфейс)."
+  },
+  "toastInputNotFoundManual": {
+    "message": "Поле выбора файла не найдено. Выберите файл вручную."
+  },
+  "toastPickNotRecognized": {
+    "message": "Поле найдено, но Google Календарь не распознал «$FILE$» (подробности в консоли).",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastPickSuccess": {
+    "message": "Файл «$FILE$» подставлен. Выберите календарь и нажмите «Импортировать».",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnBackToCalendar": {
+    "message": "Назад в календарь"
+  },
+  "errQuickNotRecognized": {
+    "message": "Google Календарь не распознал «$FILE$». Проверьте страницу импорта.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownNotFound": {
+    "message": "Не найден список «Добавить в календарь»."
+  },
+  "errCalendarNotFound": {
+    "message": "Календарь «$NAME$» не найден.",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownExpandFailed": {
+    "message": "Не удалось открыть список календарей."
+  },
+  "errImportBtnDisabled": {
+    "message": "Кнопка импорта осталась неактивной; возможно, файл не распознан."
+  },
+  "errResultNotCaptured": {
+    "message": "Импорт запущен, но подтверждение не получено. Проверьте страницу импорта."
+  },
+  "errAutoImportException": {
+    "message": "Ошибка автоимпорта: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "errStartQuickImportFailed": {
+    "message": "Не удалось запустить фоновый импорт."
+  },
+  "commandOpenFilePicker": {
+    "message": "Выбрать файлы .ics / .csv для импорта"
+  },
+  "contextMenuImportIcs": {
+    "message": "Импортировать .ics в Google Календарь"
+  },
+  "ctxFetchingLink": {
+    "message": "Загрузка файла календаря..."
+  },
+  "ctxFetchFailed": {
+    "message": "Не удалось загрузить ссылку .ics: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "ctxImportingFile": {
+    "message": "Импорт «$FILE$» в Google Календарь...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideShortcutDesc": {
+    "message": "Выбор одного или нескольких файлов .ics/.csv для пакетного импорта"
+  },
+  "optionCustomCalendar": {
+    "message": "Ввести имя вручную..."
+  },
+  "overlayPickTitleModal": {
+    "message": "Предпросмотр и выбор календаря"
+  },
+  "overlayPickSubtitleModal": {
+    "message": "Просмотрите события и выберите календарь без ухода со страницы (несколько файлов)"
+  },
+  "previewAllDay": {
+    "message": "Весь день"
+  },
+  "modalMetaSingle": {
+    "message": "$FILE$ · событий: $COUNT$",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalMetaMulti": {
+    "message": "Файлов: $FILES$ · событий: $COUNT$",
+    "placeholders": {
+      "files": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalPickTitle": {
+    "message": "Импорт в Google Календарь"
+  },
+  "modalSelectCalendarLabel": {
+    "message": "Добавить в календарь"
+  },
+  "modalOpenNativePage": {
+    "message": "Обычная страница"
+  },
+  "modalBtnCancel": {
+    "message": "Отмена"
+  },
+  "modalBtnImportMulti": {
+    "message": "Импорт ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "modalMoreEvents": {
+    "message": "Ещё событий: $COUNT$",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastSkippedInvalidFiles": {
+    "message": "Пропущено неподдерживаемых или слишком больших файлов: $COUNT$.",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideHeading": {
+    "message": "Способы импорта"
+  },
+  "guideToolbarPill": {
+    "message": "Панель"
+  },
+  "guideToolbarDesc": {
+    "message": "Клик — Импорт и экспорт · Alt+клик — выбор файлов напрямую"
+  },
+  "guideRightClickPill": {
+    "message": "ПКМ"
+  },
+  "guideRightClickDesc": {
+    "message": "Правый клик по любой .ics-ссылке на сайте для фонового импорта"
+  },
+  "btnSyncCalendars": {
+    "message": "Синхронизировать точный список со страницы импорта"
+  },
+  "statusSynced": {
+    "message": "Синхронизировано"
+  }
+}

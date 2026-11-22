@@ -1,0 +1,436 @@
+{
+  "extName": {
+    "message": "GCal Quick Import"
+  },
+  "extDescription": {
+    "message": "Adds an Import shortcut to the Google Calendar toolbar and split-screen drag-and-drop .ics/.csv importing."
+  },
+  "popupSubtitle": {
+    "message": "Toolbar shortcut + split drag & drop .ics"
+  },
+  "labelDefaultCalendar": {
+    "message": "Target calendar for quick import"
+  },
+  "placeholderDefaultCalendar": {
+    "message": "Enter calendar name"
+  },
+  "hintDefaultCalendar": {
+    "message": "Used for bottom-half drop and right-click .ics link imports."
+  },
+  "guideTopPill": {
+    "message": "Top half"
+  },
+  "guideTopDesc": {
+    "message": "Drop .ics/.csv to preview events & pick a calendar in-page"
+  },
+  "guideBottomPill": {
+    "message": "Bottom half"
+  },
+  "guideBottomDesc": {
+    "message": "Drop to auto-import to target calendar & jump to event date"
+  },
+  "statusSaved": {
+    "message": "Saved"
+  },
+  "toolbarImportLabel": {
+    "message": "Import"
+  },
+  "overlayDirectBadge": {
+    "message": "Import page"
+  },
+  "overlayDirectTitle": {
+    "message": "Drop to pre-fill file"
+  },
+  "overlayDirectSubtitle": {
+    "message": "Automatically fills the .ics / .csv file picker on this page"
+  },
+  "overlayPickBadge": {
+    "message": "Top half · Pick calendar"
+  },
+  "overlayPickTitle": {
+    "message": "Open Import page & pick calendar"
+  },
+  "overlayPickSubtitle": {
+    "message": "Opens the Import page with your file pre-filled so you can choose a calendar"
+  },
+  "overlayQuickBadge": {
+    "message": "Bottom half · Quick import"
+  },
+  "overlayQuickTitle": {
+    "message": "Auto-import to default calendar"
+  },
+  "overlayQuickSubtitlePrefix": {
+    "message": "Target calendar: "
+  },
+  "overlayQuickSubtitleSuffix": {
+    "message": " · Runs in background without leaving this page (supports multiple files)"
+  },
+  "defaultCalendarFallback": {
+    "message": "Google default calendar"
+  },
+  "toastCloseLabel": {
+    "message": "Close"
+  },
+  "toastUnsupportedFile": {
+    "message": "Only .ics or .csv calendar files are supported."
+  },
+  "toastFileTooLarge": {
+    "message": "\"$FILE$\" exceeds 6 MB. Please upload it manually on the Import page.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastExtensionReloaded": {
+    "message": "Extension was reloaded. Please refresh Google Calendar before dropping files."
+  },
+  "btnRefreshNow": {
+    "message": "Refresh"
+  },
+  "toastDirectFilled": {
+    "message": "Filled \"$FILE$\". Pick a calendar and click Import.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastDirectNotRecognized": {
+    "message": "Tried filling \"$FILE$\", but the page did not update. Check Console or select manually.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastInputNotFoundRefresh": {
+    "message": "File upload input not found on this page. Refresh and try again."
+  },
+  "toastPickSingleNotice": {
+    "message": "Pick-calendar mode handles 1 file at a time. Loaded \"$FILE$\".",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastStageFailed": {
+    "message": "Failed to prepare import: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickProgressMulti": {
+    "message": "($INDEX$/$TOTAL$) Importing \"$FILE$\" in background...",
+    "placeholders": {
+      "index": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "file": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickProgressSingle": {
+    "message": "Importing \"$FILE$\" in background...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickSuccessSingle": {
+    "message": "Imported$CAL$: $DETAIL$",
+    "placeholders": {
+      "cal": {
+        "content": "$1"
+      },
+      "detail": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickSuccessMulti": {
+    "message": "Imported $DONE$/$TOTAL$ files$CAL$",
+    "placeholders": {
+      "done": {
+        "content": "$1"
+      },
+      "total": {
+        "content": "$2"
+      },
+      "cal": {
+        "content": "$3"
+      }
+    }
+  },
+  "calParenFormat": {
+    "message": " ($NAME$)",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastQuickJumping": {
+    "message": "$MSG$ · Jumping to $DATE$...",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "toastQuickJumped": {
+    "message": "$MSG$ · Jumped to $DATE$",
+    "placeholders": {
+      "msg": {
+        "content": "$1"
+      },
+      "date": {
+        "content": "$2"
+      }
+    }
+  },
+  "btnJumpToDate": {
+    "message": "Go to $DATE$",
+    "placeholders": {
+      "date": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnReturnOriginDate": {
+    "message": "Previous date"
+  },
+  "toastQuickPartialFail": {
+    "message": "$OK$ succeeded, $FAIL$ failed: $DETAIL$",
+    "placeholders": {
+      "ok": {
+        "content": "$1"
+      },
+      "fail": {
+        "content": "$2"
+      },
+      "detail": {
+        "content": "$3"
+      }
+    }
+  },
+  "toastQuickFailed": {
+    "message": "Import incomplete: $DETAIL$",
+    "placeholders": {
+      "detail": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnViewImportTab": {
+    "message": "View Import tab"
+  },
+  "btnOpenImportPage": {
+    "message": "Open Import page"
+  },
+  "toastQuickTimeout": {
+    "message": "Background import timed out. Please check the Import page."
+  },
+  "toastFillingFile": {
+    "message": "Filling \"$FILE$\"...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errInputNotFound": {
+    "message": "File upload input not found (not signed in or UI changed)."
+  },
+  "toastInputNotFoundManual": {
+    "message": "File upload input not found on Import page. Please select the file manually."
+  },
+  "toastPickNotRecognized": {
+    "message": "Located file input, but Google Calendar did not recognize \"$FILE$\" (diagnostics logged to Console).",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastPickSuccess": {
+    "message": "Pre-filled \"$FILE$\". Pick a calendar and click Import.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "btnBackToCalendar": {
+    "message": "Back to Calendar"
+  },
+  "errQuickNotRecognized": {
+    "message": "Google Calendar did not recognize \"$FILE$\". Please check the Import page.",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownNotFound": {
+    "message": "Could not find the \"Add to calendar\" dropdown."
+  },
+  "errCalendarNotFound": {
+    "message": "Calendar \"$NAME$\" was not found.",
+    "placeholders": {
+      "name": {
+        "content": "$1"
+      }
+    }
+  },
+  "errDropdownExpandFailed": {
+    "message": "Could not open the calendar dropdown."
+  },
+  "errImportBtnDisabled": {
+    "message": "Import button stayed disabled; the file may not be recognized."
+  },
+  "errResultNotCaptured": {
+    "message": "Clicked Import, but no confirmation message was captured. Please check the Import page."
+  },
+  "errAutoImportException": {
+    "message": "Auto-import error: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "errStartQuickImportFailed": {
+    "message": "Could not start background import."
+  },
+  "commandOpenFilePicker": {
+    "message": "Select .ics / .csv file(s) to import"
+  },
+  "contextMenuImportIcs": {
+    "message": "Import .ics to Google Calendar"
+  },
+  "ctxFetchingLink": {
+    "message": "Fetching calendar file..."
+  },
+  "ctxFetchFailed": {
+    "message": "Failed to fetch .ics link: $ERROR$",
+    "placeholders": {
+      "error": {
+        "content": "$1"
+      }
+    }
+  },
+  "ctxImportingFile": {
+    "message": "Importing \"$FILE$\" to Google Calendar...",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideShortcutDesc": {
+    "message": "Pick one or multiple .ics/.csv files for batch import"
+  },
+  "optionCustomCalendar": {
+    "message": "Custom calendar name..."
+  },
+  "overlayPickTitleModal": {
+    "message": "Preview events & pick calendar"
+  },
+  "overlayPickSubtitleModal": {
+    "message": "Preview events and choose a target calendar without leaving this page (supports multiple files)"
+  },
+  "previewAllDay": {
+    "message": "All day"
+  },
+  "modalMetaSingle": {
+    "message": "$FILE$ · $COUNT$ event(s)",
+    "placeholders": {
+      "file": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalMetaMulti": {
+    "message": "$FILES$ files · $COUNT$ event(s)",
+    "placeholders": {
+      "files": {
+        "content": "$1"
+      },
+      "count": {
+        "content": "$2"
+      }
+    }
+  },
+  "modalPickTitle": {
+    "message": "Import to Google Calendar"
+  },
+  "modalSelectCalendarLabel": {
+    "message": "Add to calendar"
+  },
+  "modalOpenNativePage": {
+    "message": "Native Import page"
+  },
+  "modalBtnCancel": {
+    "message": "Cancel"
+  },
+  "modalBtnImportMulti": {
+    "message": "Import ($COUNT$)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "modalMoreEvents": {
+    "message": "+$COUNT$ more event(s)",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "toastSkippedInvalidFiles": {
+    "message": "Skipped $COUNT$ unsupported or oversized file(s).",
+    "placeholders": {
+      "count": {
+        "content": "$1"
+      }
+    }
+  },
+  "guideHeading": {
+    "message": "Ways to import"
+  },
+  "guideToolbarPill": {
+    "message": "Toolbar"
+  },
+  "guideToolbarDesc": {
+    "message": "Click for Import & Export · Alt+Click to pick files directly"
+  },
+  "guideRightClickPill": {
+    "message": "Right-click"
+  },
+  "guideRightClickDesc": {
+    "message": "Right-click any web .ics link to import directly in background"
+  },
+  "btnSyncCalendars": {
+    "message": "Sync exact calendar list from Import page"
+  },
+  "statusSynced": {
+    "message": "Synced"
+  }
+}
