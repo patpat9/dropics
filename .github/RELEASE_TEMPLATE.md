@@ -1,0 +1,1 @@
+**Install via Chrome Web Store:** [DropICS on Chrome Web Store](https://chromewebstore.google.com/detail/dropics-drag-drop-ics-for/momahmadfpmpndnlioonmaopkfkgcild) *(Recommended for most users; the `.zip` asset below is only for manual sideloading via `chrome://extensions` -> Load unpacked.)*

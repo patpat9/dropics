@@ -65,7 +65,6 @@ jobs:
         if: startsWith(github.ref, 'refs/tags/v')
         uses: softprops/action-gh-release@v2
         with:
+          body_path: .github/RELEASE_TEMPLATE.md
           files: ${{ steps.pkg.outputs.zip_name }}
           generate_release_notes: true
-          body: |
-            > **Install via Chrome Web Store:** [DropICS on Chrome Web Store](https://chromewebstore.google.com/detail/dropics-drag-drop-ics-for/momahmadfpmpndnlioonmaopkfkgcild) *(Recommended for most users; the `.zip` asset below is only for manual sideloading.)*
