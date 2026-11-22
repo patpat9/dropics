@@ -1,0 +1,5 @@
+blank_issues_enabled: false
+contact_links:
+  - name: Privacy policy
+    url: https://github.com/patpat9/dropics/blob/main/PRIVACY.md
+    about: What data DropICS handles (short answer - nothing leaves your browser except to Google Calendar).

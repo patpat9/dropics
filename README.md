@@ -7,6 +7,7 @@ A lightweight, zero-OAuth Chrome extension (Manifest V3) that lets you drag and 
 - **Chrome Web Store**: [DropICS on Chrome Web Store](https://chromewebstore.google.com/detail/momahmadfpmpndnlioonmaopkfkgcild) *(pending review / live once approved)*
 - **Releases**: [GitHub Releases](https://github.com/patpat9/dropics/releases) (`dropics-v*.zip`)
 - **License**: [AGPL-3.0](LICENSE)
+- **Privacy**: [PRIVACY.md](PRIVACY.md) · **Contributing**: [CONTRIBUTING.md](CONTRIBUTING.md)
 
 ---
 
@@ -43,12 +44,14 @@ A lightweight, zero-OAuth Chrome extension (Manifest V3) that lets you drag and 
 
 ## Privacy & Permissions
 
+DropICS has no backend server, analytics, or telemetry, and never sends your data to the developer or third parties. See the full [Privacy Policy](PRIVACY.md).
+
 DropICS requests the minimum Manifest V3 permissions required for its features:
 
 | Permission / Host | Purpose |
 | :--- | :--- |
 | `https://calendar.google.com/*` | Injects the drag-and-drop overlay, preview modal, header Import button, and background import automation on Google Calendar. |
-| `storage` | Saves your preferred target calendar and synced writable calendar list locally via `chrome.storage.sync`. |
+| `storage` | Saves your preferred target calendar (`chrome.storage.sync`) and detected writable calendar list (`chrome.storage.local`), and holds files temporarily during an import (`chrome.storage.session`). |
 | `scripting` | Attaches dropped or fetched `.ics` / `.csv` files into Google Calendar's `/settings/export` file input (`world: 'MAIN'`) and syncs writable calendar options. |
 | `contextMenus` | Adds the **Import .ics to Google Calendar** right-click menu item on links. |
 | `activeTab` | Fetches a right-clicked `.ics` / `.csv` link using the active tab's existing session only when you explicitly trigger the context menu (avoids `<all_urls>`). |
