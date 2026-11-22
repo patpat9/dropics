@@ -1,10 +1,16 @@
 # DropICS - Drag & Drop `.ics` for Google Calendar
 
+[![Chrome Web Store](https://img.shields.io/chrome-web-store/v/momahmadfpmpndnlioonmaopkfkgcild?label=Chrome%20Web%20Store&logo=googlechrome&logoColor=white&color=1a73e8)](https://chromewebstore.google.com/detail/dropics-drag-drop-ics-for/momahmadfpmpndnlioonmaopkfkgcild)
+[![Users](https://img.shields.io/chrome-web-store/users/momahmadfpmpndnlioonmaopkfkgcild?color=1a73e8)](https://chromewebstore.google.com/detail/dropics-drag-drop-ics-for/momahmadfpmpndnlioonmaopkfkgcild)
+[![CI](https://github.com/patpat9/dropics/actions/workflows/ci.yml/badge.svg)](https://github.com/patpat9/dropics/actions/workflows/ci.yml)
+[![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue)](LICENSE)
+
 ![DropICS Banner](store_assets/promo_marquee_1400x560.png)
 
 A lightweight, zero-OAuth Chrome extension (Manifest V3) that lets you drag and drop `.ics` and `.csv` files directly onto Google Calendar, preview events and pick a target calendar without leaving your schedule, import web `.ics` links via right-click, and jump straight to the imported event date.
 
-- **Chrome Web Store**: [DropICS on Chrome Web Store](https://chromewebstore.google.com/detail/momahmadfpmpndnlioonmaopkfkgcild) *(pending review / live once approved)*
+**[Install from the Chrome Web Store](https://chromewebstore.google.com/detail/dropics-drag-drop-ics-for/momahmadfpmpndnlioonmaopkfkgcild)**
+
 - **Releases**: [GitHub Releases](https://github.com/patpat9/dropics/releases) (`dropics-v*.zip`)
 - **License**: [AGPL-3.0](LICENSE)
 - **Privacy**: [PRIVACY.md](PRIVACY.md) · **Contributing**: [CONTRIBUTING.md](CONTRIBUTING.md)
@@ -61,7 +67,7 @@ DropICS requests the minimum Manifest V3 permissions required for its features:
 ## Installation
 
 ### Option 1: Chrome Web Store (Recommended)
-Install from the [Chrome Web Store listing](https://chromewebstore.google.com/detail/momahmadfpmpndnlioonmaopkfkgcild) once published.
+Install from the [Chrome Web Store listing](https://chromewebstore.google.com/detail/dropics-drag-drop-ics-for/momahmadfpmpndnlioonmaopkfkgcild). Updates are installed automatically.
 
 ### Option 2: GitHub Release ZIP
 1. Download `dropics-v1.2.0.zip` from [GitHub Releases](https://github.com/patpat9/dropics/releases).
