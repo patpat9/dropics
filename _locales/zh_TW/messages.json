@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal 快速匯入"
+    "message": "DropICS - Google 日曆拖放匯入 .ics"
   },
   "extDescription": {
-    "message": "在 Google Calendar 頂欄新增匯入捷徑，支援上下分割拖放匯入 .ics / .csv 行事曆檔案及右鍵連結匯入。"
+    "message": "將 .ics/.csv 直接拖進 Google 日曆秒匯入：頁內預覽選行事曆、背景靜默匯入並跳轉日期、右鍵網頁 .ics 連結直匯，免 OAuth。"
   },
   "popupSubtitle": {
-    "message": "頂欄直達 + 分割拖放匯入 .ics"
+    "message": "Google 日曆拖放匯入 .ics"
   },
   "labelDefaultCalendar": {
     "message": "快速匯入的目標行事曆"

@@ -1,6 +1,6 @@
-# GCal Quick Import
+# DropICS - Drag & Drop .ics for Google Calendar
 
-Chrome extension (Manifest V3, zero OAuth) that adds an **Import** shortcut to the Google Calendar toolbar, split-screen `.ics` / `.csv` drag-and-drop importing, in-page event preview + calendar selection, right-click `.ics` link importing, and multi-file quick import (`Alt+I`).
+Chrome extension (Manifest V3, zero OAuth) that lets you drag & drop `.ics` / `.csv` files straight onto Google Calendar, adds a toolbar **Import** shortcut, supports in-page event preview + calendar selection, right-click web `.ics` link importing, and multi-file batch import (`Alt+I`).
 
 ## Features
 

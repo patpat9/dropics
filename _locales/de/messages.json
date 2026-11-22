@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal Schnell-Import"
+    "message": "DropICS - .ics Drag & Drop für Google Kalender"
   },
   "extDescription": {
-    "message": "Fügt der Google Kalender-Symbolleiste eine Import-Verknüpfung hinzu und ermöglicht geteiltes Drag & Drop für .ics/.csv-Dateien."
+    "message": ".ics/.csv direkt in Google Kalender ziehen: Vorschau & Kalenderwahl, Sprung zum Termindatum und Rechtsklick-Import. Ohne OAuth."
   },
   "popupSubtitle": {
-    "message": "Symbolleisten-Button + geteiltes .ics Drag & Drop"
+    "message": ".ics Drag & Drop für Google Kalender"
   },
   "labelDefaultCalendar": {
     "message": "Zielkalender für Schnell-Import"

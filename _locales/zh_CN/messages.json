@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal 快捷导入"
+    "message": "DropICS - Google 日历拖拽导入 .ics"
   },
   "extDescription": {
-    "message": "在 Google Calendar 顶栏添加导入快捷入口，支持上下分屏拖拽导入 .ics / .csv 日历文件及右键链接导入。"
+    "message": "把 .ics/.csv 直接拖进 Google 日历秒导入：页内预览选日历、后台静默导入并跳转日期、右键网页 .ics 链接直导，免 OAuth。"
   },
   "popupSubtitle": {
-    "message": "顶栏直达 + 分屏拖拽导入 .ics"
+    "message": "Google 日历拖拽导入 .ics"
   },
   "labelDefaultCalendar": {
     "message": "快捷导入的目标日历"

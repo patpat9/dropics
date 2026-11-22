@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal 빠른 가져오기"
+    "message": "DropICS - Google 캘린더 .ics 드래그 앤 드롭"
   },
   "extDescription": {
-    "message": "Google 캘린더 상단 바에 가져오기 바로가기를 추가하고 상하 분할 드래그 앤 드롭으로 .ics/.csv 파일을 빠르게 가져옵니다."
+    "message": ".ics/.csv를 Google 캘린더에 바로 드롭해 가져오기: 일정 미리보기, 캘린더 선택, 날짜 자동 이동, 웹 .ics 링크 우클릭 가져오기 지원."
   },
   "popupSubtitle": {
-    "message": "상단 바로가기 + 분할 드래그 앤 드롭 .ics"
+    "message": "Google 캘린더 .ics 드래그 앤 드롭"
   },
   "labelDefaultCalendar": {
     "message": "빠른 가져오기 대상 캘린더"

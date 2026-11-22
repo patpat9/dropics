@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal Быстрый импорт"
+    "message": "DropICS - Перетаскивание .ics в Google Календарь"
   },
   "extDescription": {
-    "message": "Добавляет кнопку импорта в панель Google Календаря и раздельный drag-and-drop для быстрого импорта файлов .ics/.csv."
+    "message": "Перетаскивайте .ics/.csv прямо в Google Календарь: предпросмотр, выбор календаря, переход к дате и импорт .ics-ссылок по ПКМ."
   },
   "popupSubtitle": {
-    "message": "Кнопка в панели + drag & drop .ics"
+    "message": "Drag & drop .ics для Google Календаря"
   },
   "labelDefaultCalendar": {
     "message": "Целевой календарь для быстрого импорта"

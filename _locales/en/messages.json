@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal Quick Import"
+    "message": "DropICS - Drag & Drop .ics for Google Calendar"
   },
   "extDescription": {
-    "message": "Adds an Import shortcut to the Google Calendar toolbar and split-screen drag-and-drop .ics/.csv importing."
+    "message": "Drag & drop .ics/.csv straight onto Google Calendar. Preview & pick calendars, auto-jump to event date, or right-click .ics links."
   },
   "popupSubtitle": {
-    "message": "Toolbar shortcut + split drag & drop .ics"
+    "message": "Drag & drop .ics for Google Calendar"
   },
   "labelDefaultCalendar": {
     "message": "Target calendar for quick import"

@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal Importación Rápida"
+    "message": "DropICS - Arrastrar .ics a Google Calendar"
   },
   "extDescription": {
-    "message": "Añade un acceso directo de importación a la barra de Google Calendar y permite arrastrar y soltar archivos .ics/.csv en pantalla dividida."
+    "message": "Arrastra .ics/.csv directo a Google Calendar: vista previa, elegir calendario, salto a la fecha y clic derecho en enlaces .ics."
   },
   "popupSubtitle": {
-    "message": "Acceso directo + arrastrar y soltar .ics"
+    "message": "Arrastra y suelta .ics en Google Calendar"
   },
   "labelDefaultCalendar": {
     "message": "Calendario destino para importación rápida"

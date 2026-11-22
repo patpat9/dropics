@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal Importazione Rapida"
+    "message": "DropICS - Trascina .ics su Google Calendar"
   },
   "extDescription": {
-    "message": "Aggiunge una scorciatoia di importazione alla barra di Google Calendar e il drag-and-drop a schermo diviso per file .ics/.csv."
+    "message": "Trascina .ics/.csv su Google Calendar: anteprima e scelta calendario, salto alla data dell'evento o clic destro sui link .ics."
   },
   "popupSubtitle": {
-    "message": "Scorciatoia barra + drag & drop .ics"
+    "message": "Drag & drop .ics per Google Calendar"
   },
   "labelDefaultCalendar": {
     "message": "Calendario di destinazione per importazione rapida"

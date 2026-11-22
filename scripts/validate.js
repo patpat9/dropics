@@ -98,6 +98,16 @@ for (const loc of locales) {
       fail(`Placeholder mismatch in "${loc}" for key "${key}": expected [${basePh}], got [${locPh}]`);
     }
   }
+
+  // Enforce Chrome Web Store hard limits on manifest name (<= 75) & description (<= 132)
+  const nameLen = map.extName.message.length;
+  const descLen = map.extDescription.message.length;
+  if (nameLen > 75) {
+    fail(`Locale "${loc}" extName exceeds 75 chars (${nameLen})`);
+  }
+  if (descLen > 132) {
+    fail(`Locale "${loc}" extDescription exceeds 132 chars (${descLen})`);
+  }
 }
 
 const usedKeys = new Set();

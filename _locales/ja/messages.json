@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal クイックインポート"
+    "message": "DropICS - Google カレンダーへ .ics をドラッグ＆ドロップ"
   },
   "extDescription": {
-    "message": "Google カレンダーのツールバーにインポートボタンを追加し、上下分割ドラッグ＆ドロップで .ics/.csv を素早く取り込みます。"
+    "message": ".ics/.csv を Google カレンダーへ直接ドロップして即インポート。予定プレビュー、保存先選択、日付自動移動、Webリンク右クリック取込に対応。"
   },
   "popupSubtitle": {
-    "message": "ツールバー直行 + 分割ドラッグ＆ドロップ"
+    "message": "Google カレンダーへ .ics をドラッグ＆ドロップ"
   },
   "labelDefaultCalendar": {
     "message": "クイックインポート先のカレンダー"

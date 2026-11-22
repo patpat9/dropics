@@ -1,12 +1,12 @@
 {
   "extName": {
-    "message": "GCal Importação Rápida"
+    "message": "DropICS - Arrastar .ics para Google Agenda"
   },
   "extDescription": {
-    "message": "Adiciona um atalho de importação à barra do Google Agenda e permite arrastar e soltar arquivos .ics/.csv em tela dividida."
+    "message": "Arraste .ics/.csv direto no Google Agenda: pré-visualize, escolha a agenda, vá à data do evento ou clique direito em links .ics."
   },
   "popupSubtitle": {
-    "message": "Atalho na barra + arrastar e soltar .ics"
+    "message": "Arraste e solte .ics no Google Agenda"
   },
   "labelDefaultCalendar": {
     "message": "Agenda destino para importação rápida"
