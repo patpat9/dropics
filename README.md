@@ -5,7 +5,7 @@
 A lightweight, zero-OAuth Chrome extension (Manifest V3) that lets you drag and drop `.ics` and `.csv` files directly onto Google Calendar, preview events and pick a target calendar without leaving your schedule, import web `.ics` links via right-click, and jump straight to the imported event date.
 
 - **Chrome Web Store**: [DropICS on Chrome Web Store](https://chromewebstore.google.com/detail/momahmadfpmpndnlioonmaopkfkgcild) *(pending review / live once approved)*
-- **Releases**: [GitHub Releases](https://github.com/patpat9/chrome_gcal_import/releases) (`dropics-v*.zip`)
+- **Releases**: [GitHub Releases](https://github.com/patpat9/dropics/releases) (`dropics-v*.zip`)
 - **License**: [AGPL-3.0](LICENSE)
 
 ---
@@ -61,7 +61,7 @@ DropICS requests the minimum Manifest V3 permissions required for its features:
 Install from the [Chrome Web Store listing](https://chromewebstore.google.com/detail/momahmadfpmpndnlioonmaopkfkgcild) once published.
 
 ### Option 2: GitHub Release ZIP
-1. Download `dropics-v1.2.0.zip` from [GitHub Releases](https://github.com/patpat9/chrome_gcal_import/releases).
+1. Download `dropics-v1.2.0.zip` from [GitHub Releases](https://github.com/patpat9/dropics/releases).
 2. Extract the archive to a local folder.
 3. Open `chrome://extensions/` in Chrome and enable **Developer mode** (top right).
 4. Click **Load unpacked** and select the extracted folder.
@@ -69,7 +69,7 @@ Install from the [Chrome Web Store listing](https://chromewebstore.google.com/de
 
 ### Option 3: From Source
 ```bash
-git clone https://github.com/patpat9/chrome_gcal_import.git
+git clone https://github.com/patpat9/dropics.git
 ```
 Then load the cloned directory via `chrome://extensions/` -> **Developer mode** -> **Load unpacked**, and refresh Google Calendar.
 
@@ -105,7 +105,7 @@ git push origin v1.2.0
 ### Project Structure
 
 ```text
-chrome_gcal_import/
+dropics/
 ├── manifest.json            # Extension manifest (MV3)
 ├── background.js            # Service worker: import jobs, calendar sync, context menu, Alt+I
 ├── content.js               # Google Calendar UI: toolbar button, split overlay, preview modal, parser
