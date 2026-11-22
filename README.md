@@ -1,3 +1,9 @@
+
+
+
+
+
+
 # DropICS - Drag & Drop `.ics` for Google Calendar
 
 [![Chrome Web Store](https://img.shields.io/chrome-web-store/v/momahmadfpmpndnlioonmaopkfkgcild?label=Chrome%20Web%20Store&logo=googlechrome&logoColor=white&color=1a73e8)](https://chromewebstore.google.com/detail/dropics-drag-drop-ics-for/momahmadfpmpndnlioonmaopkfkgcild)
@@ -5,7 +11,9 @@
 [![CI](https://github.com/patpat9/dropics/actions/workflows/ci.yml/badge.svg)](https://github.com/patpat9/dropics/actions/workflows/ci.yml)
 [![License: AGPL-3.0](https://img.shields.io/badge/license-AGPL--3.0-blue)](LICENSE)
 
-![DropICS Banner](store_assets/promo_marquee_1400x560.png)
+
+https://github.com/user-attachments/assets/7f4e7cf1-21b7-40d2-b2a4-7f562661476b
+
 
 A lightweight, zero-OAuth Chrome extension (Manifest V3) that lets you drag and drop `.ics` and `.csv` files directly onto Google Calendar, preview events and pick a target calendar without leaving your schedule, import web `.ics` links via right-click, and jump straight to the imported event date.
 
