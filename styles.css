@@ -89,7 +89,7 @@
   }
 }
 
-/* Telegram-style Split Drag & Drop Overlay */
+/* Split-Screen Drag & Drop Overlay */
 #gcal-dnd-overlay {
   position: fixed;
   inset: 0;
@@ -98,7 +98,7 @@
   flex-direction: column;
   gap: 16px;
   padding: 20px;
-  background: rgba(15, 23, 42, 0.42);
+  background: rgba(15, 23, 42, 0.14);
   backdrop-filter: blur(8px);
   -webkit-backdrop-filter: blur(8px);
   box-sizing: border-box;
@@ -120,8 +120,8 @@
   align-items: center;
   justify-content: center;
   border-radius: 20px;
-  border: 2.5px dashed rgba(255, 255, 255, 0.55);
-  background: rgba(255, 255, 255, 0.86);
+  border: 2.5px dashed rgba(60, 64, 67, 0.28);
+  background: rgba(255, 255, 255, 0.56);
   color: #1f1f1f;
   text-align: center;
   padding: 24px;
@@ -135,27 +135,27 @@
 }
 
 .gcal-dnd-zone[data-zone="pick"].gcal-dnd-active {
-  background: rgba(232, 240, 254, 0.96);
+  background: rgba(232, 240, 254, 0.68);
   border-color: #1a73e8;
   border-style: solid;
   transform: scale(1.008);
-  box-shadow: 0 12px 32px rgba(26, 115, 232, 0.24);
+  box-shadow: 0 12px 32px rgba(26, 115, 232, 0.22);
 }
 
 .gcal-dnd-zone[data-zone="quick"].gcal-dnd-active {
-  background: rgba(230, 244, 234, 0.96);
+  background: rgba(230, 244, 234, 0.68);
   border-color: #188038;
   border-style: solid;
   transform: scale(1.008);
-  box-shadow: 0 12px 32px rgba(24, 128, 56, 0.24);
+  box-shadow: 0 12px 32px rgba(24, 128, 56, 0.22);
 }
 
 .gcal-dnd-zone[data-zone="direct"].gcal-dnd-active {
-  background: rgba(232, 240, 254, 0.96);
+  background: rgba(232, 240, 254, 0.68);
   border-color: #1a73e8;
   border-style: solid;
   transform: scale(1.006);
-  box-shadow: 0 12px 32px rgba(26, 115, 232, 0.24);
+  box-shadow: 0 12px 32px rgba(26, 115, 232, 0.22);
 }
 
 .gcal-dnd-icon {
@@ -221,14 +221,14 @@
 
 /* Dark Theme Overlay (matches Google Calendar Material 3 Dark Mode) */
 #gcal-dnd-overlay.gcal-theme-dark {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.28);
   backdrop-filter: blur(10px);
   -webkit-backdrop-filter: blur(10px);
 }
 
 #gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone {
-  background: rgba(30, 31, 32, 0.9);
-  border-color: rgba(255, 255, 255, 0.22);
+  background: rgba(30, 31, 32, 0.62);
+  border-color: rgba(255, 255, 255, 0.26);
   color: #e3e3e3;
 }
 
@@ -268,15 +268,15 @@
 
 #gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="pick"].gcal-dnd-active,
 #gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="direct"].gcal-dnd-active {
-  background: rgba(25, 42, 68, 0.96);
+  background: rgba(25, 42, 68, 0.72);
   border-color: #8ab4f8;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(138, 180, 248, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(138, 180, 248, 0.25);
 }
 
 #gcal-dnd-overlay.gcal-theme-dark .gcal-dnd-zone[data-zone="quick"].gcal-dnd-active {
-  background: rgba(20, 48, 34, 0.96);
+  background: rgba(20, 48, 34, 0.72);
   border-color: #81c995;
-  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.45), 0 0 0 1px rgba(129, 201, 149, 0.25);
+  box-shadow: 0 12px 32px rgba(0, 0, 0, 0.42), 0 0 0 1px rgba(129, 201, 149, 0.25);
 }
 
 /* Status Toast */

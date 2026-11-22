@@ -669,13 +669,17 @@
           <p class="gcal-dnd-subtitle"></p>
         </div>
       `;
-      overlayEl.querySelector('.gcal-dnd-badge').textContent = t('overlayDirectBadge');
-      overlayEl.querySelector('.gcal-dnd-title').textContent = t('overlayDirectTitle');
-      overlayEl.querySelector('.gcal-dnd-subtitle').textContent = t('overlayDirectSubtitle');
+      overlayEl.querySelector('.gcal-dnd-badge').textContent = t('overlayDirectBadge', null, 'Import page');
+      overlayEl.querySelector('.gcal-dnd-title').textContent = t('overlayDirectTitle', null, 'Drop to pre-fill file');
+      overlayEl.querySelector('.gcal-dnd-subtitle').textContent = t(
+        'overlayDirectSubtitle',
+        null,
+        'Automatically fills the .ics / .csv file picker on this page'
+      );
       return;
     }
 
-    const defaultLabel = settings.defaultCalendarName || t('defaultCalendarFallback');
+    const defaultLabel = settings.defaultCalendarName || t('defaultCalendarFallback', null, 'Google default calendar');
     overlayEl.innerHTML = `
       <div class="gcal-dnd-zone" data-zone="pick">
         <div class="gcal-dnd-icon">
@@ -701,27 +705,31 @@
       </div>
     `;
     const pickZone = overlayEl.querySelector('[data-zone="pick"]');
-    pickZone.querySelector('.gcal-dnd-badge').textContent = t('overlayPickBadge');
+    pickZone.querySelector('.gcal-dnd-badge').textContent = t('overlayPickBadge', null, 'Top half · Pick calendar');
     pickZone.querySelector('.gcal-dnd-title').textContent = settings.pickInPageModal
       ? t('overlayPickTitleModal', null, 'Preview events & pick calendar')
-      : t('overlayPickTitle');
+      : t('overlayPickTitle', null, 'Open Import page & pick calendar');
     pickZone.querySelector('.gcal-dnd-subtitle').textContent = settings.pickInPageModal
-      ? t('overlayPickSubtitleModal', null, 'Preview events and pick a target calendar without leaving this page')
-      : t('overlayPickSubtitle');
+      ? t('overlayPickSubtitleModal', null, 'Preview events and choose a target calendar without leaving this page (supports multiple files)')
+      : t('overlayPickSubtitle', null, 'Opens the Import page with your file pre-filled so you can choose a calendar');
 
     const quickZone = overlayEl.querySelector('[data-zone="quick"]');
-    quickZone.querySelector('.gcal-dnd-badge').textContent = t('overlayQuickBadge');
-    quickZone.querySelector('.gcal-dnd-title').textContent = t('overlayQuickTitle');
-    quickZone.querySelector('#gcal-dnd-sub-prefix').textContent = t('overlayQuickSubtitlePrefix');
+    quickZone.querySelector('.gcal-dnd-badge').textContent = t('overlayQuickBadge', null, 'Bottom half · Quick import');
+    quickZone.querySelector('.gcal-dnd-title').textContent = t('overlayQuickTitle', null, 'Auto-import to default calendar');
+    quickZone.querySelector('#gcal-dnd-sub-prefix').textContent = t('overlayQuickSubtitlePrefix', null, 'Target calendar: ');
     quickZone.querySelector('#gcal-dnd-default-name').textContent = defaultLabel;
-    quickZone.querySelector('#gcal-dnd-sub-suffix').textContent = t('overlayQuickSubtitleSuffix');
+    quickZone.querySelector('#gcal-dnd-sub-suffix').textContent = t(
+      'overlayQuickSubtitleSuffix',
+      null,
+      ' · Runs in background without leaving this page (supports multiple files)'
+    );
   }
 
   function refreshOverlayLabels() {
     if (!overlayEl) return;
     const nameEl = overlayEl.querySelector('#gcal-dnd-default-name');
     if (nameEl) {
-      nameEl.textContent = settings.defaultCalendarName || t('defaultCalendarFallback');
+      nameEl.textContent = settings.defaultCalendarName || t('defaultCalendarFallback', null, 'Google default calendar');
     }
   }
 
